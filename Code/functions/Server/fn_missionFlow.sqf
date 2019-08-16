@@ -32,7 +32,7 @@ if(isServer) then {
 	_trigger setTriggerArea[0, 0, 0, false];
 	_trigger setTriggerActivation["NONE", "PRESENT", false];
 	_trigger setTriggerTimeout [2, 2, 2, true];
-	_trigger setTriggerStatements["a3e_var_Escape_AllPlayersDead", """end1"" call A3E_fnc_endMissionServer;", ""];
+	_trigger setTriggerStatements["a3e_var_Escape_AllPlayersDead", """EveryoneLost"" call A3E_fnc_endMissionServer;", ""];
 	
 	_trigger = createTrigger["EmptyDetector", [0,0,0], false];
 	_trigger setTriggerArea[0, 0, 0, false];

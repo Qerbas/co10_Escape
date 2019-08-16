@@ -101,28 +101,18 @@ class CfgFunctions
 		{
             class BuildPrison {};
 			class BuildPrison1 {};
-			class BuildPrison2 {};
 			class BuildPrison3 {};
-			class BuildPrison4 {};
-			class BuildPrison5 {};
 			class BuildComCenter {};
 			class BuildComCenter2 {};
 			class BuildComCenter3 {};
-			class BuildComCenter4 {};
-			class BuildComCenter5 {};
             class BuildMotorPool {};
 			class AmmoDepot {};
-			class AmmoDepot2 {};
-			class AmmoDepot3 {};
-			class AmmoDepot4 {};
-			class AmmoDepot5 {};			
+            class AmmoDepot2 {};			
 			class CrashSite {};
 			class MortarSite {};
 			class MortarSite2 {};
 			class Roadblock {};
-			class Roadblock2 {};
-			class Roadblock3 {};
-			class Roadblock4 {};			
+            class Roadblock3 {};			
 		};
 		class Chronos
 		{
