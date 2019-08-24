@@ -109,8 +109,7 @@ waituntil{sleep 0.1;(player getvariable["A3E_PlayerInitializedServer",false])};
 
 diag_log format["Escape debug: %1 is now ready (clientside).", name player];
 
-sleep 12;
-titleFadeOut 1.0;
+titleFadeOut 0.5;
 
 
 waituntil{sleep 0.5;!isNil("A3E_EscapeHasStarted")};
