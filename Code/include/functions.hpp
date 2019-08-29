@@ -19,7 +19,6 @@ class CfgFunctions
 		class findFlatAreaNear{};
 		class RotatePosition{};
 		class GetEnemyCount{};
-		class paramWeather{};
 		class paramDaytime{};
 		class systemChat {};
 		class groupChat {};
@@ -90,7 +89,6 @@ class CfgFunctions
 			class runExtraction {};
 			class runExtractionBoat {};
 			class firedNearExtraction {};
-			class weather {};
 			class FindSpawnRoad {};
 			class EndMissionServer {};
 			class SelectExtractionZone {};
@@ -139,7 +137,6 @@ class CfgFunctions
 			class PopulateLocation {};
 			class DepopulateLocation {};
 			class InitGuardedLocations {};
-			class DynamicWeatherEffects {};
 			class InsertionTruck {};
 			class MilitaryTraffic {};
 			class MoveVehicle {};
@@ -181,15 +178,6 @@ class CfgFunctions
 			class ATCam {};
 			class CaptiveHandle {};
 			class GroundHandler {};
-		};
-	};
-	class MB
-	{
-		class Weather
-		{
-			class randomWeather2 {
-				file  = "functions\Weather\randomWeather2.sqf";
-			};
 		};
 	};
 };

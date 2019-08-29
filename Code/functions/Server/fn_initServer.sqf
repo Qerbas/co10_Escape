@@ -78,7 +78,7 @@ if(Param_War_Torn == 0) then {
 
 
 
-[] spawn A3E_fnc_weather;
+//[] spawn A3E_fnc_weather;
 
 private ["_hour","_date"];
 _hour = Param_TimeOfDay;
