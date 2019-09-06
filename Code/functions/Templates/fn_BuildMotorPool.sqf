@@ -584,9 +584,9 @@ if (count _parkedArmorClasses > 0) then {
 	_sarmor setdamage (random [0, 0.2, 0.5]);
 	
     if (["ammo", "fuel"] call BIS_fnc_selectRandom == "ammo") then {
-        _sarmor setFuel 0.01;
+        _sarmor setFuel 0.05;
     } else {
-        _sarmor setFuel 0.01;
+        _sarmor setFuel 0.05;
     };
 
 };

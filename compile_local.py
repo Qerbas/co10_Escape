@@ -102,7 +102,7 @@ for s in addonFolders:
             addonMissionFolder = mission['name']+'\\'+mission['name']+str(missionNumber)+'.'+ missionIsland['class'] 
             if os.path.exists(data['BuildDir'] + '/addons/' +mission['name']+'/'+mission['name']+str(missionNumber)+'.'+ missionIsland['class']):
                 shutil.rmtree(data['BuildDir'] + '/addons/' +mission['name']+'/'+mission['name']+str(missionNumber)+'.'+ missionIsland['class'])
-            shutil.copytree(data['BuildDir'] + '/missionfiles/' + missiondir,data['BuildDir'] + '/addons/' +mission['name']+'/'+mission['name']+str(missionNumber)+'.'+ missionIsland['class'])
+            #shutil.copytree(data['BuildDir'] + '/missionfiles/' + missiondir,data['BuildDir'] + '/addons/' +mission['name']+'/'+mission['name']+str(missionNumber)+'.'+ missionIsland['class'])
             ds=open(data['BuildDir'] + '/addons/' +mission['name']+'/'+mission['name']+str(missionNumber)+'.'+ missionIsland['class']+'/include/defines.hpp').read()
             ds=ds.replace('#define RELEASE "Mission"', '#define RELEASE "Addon"')
             f=open(data['BuildDir'] + '/addons/' +mission['name']+'/'+mission['name']+str(missionNumber)+'.'+ missionIsland['class']+'/include/defines.hpp', 'w')
