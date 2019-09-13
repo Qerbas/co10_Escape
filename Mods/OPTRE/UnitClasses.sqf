@@ -25,7 +25,7 @@ a3e_arr_Escape_StartPositionGuardTypes = [
 	"OPTRE_UNSC_Marine_Soldier_Grenadier"
 	,"OPTRE_UNSC_Marine_Soldier_Rifleman_Light"
 	,"OPTRE_UNSC_Marine_Soldier_Autorifleman"
-	,"OPTRE_UNSC_Marine_Soldier_Rifleman_AR_DES"];
+	,"OPTRE_UNSC_Marine_Soldier_Rifleman_AR"];
 
 // Prison backpack secondary weapon (and corresponding magazine type).
 a3e_arr_PrisonBackpackWeapons = [];
