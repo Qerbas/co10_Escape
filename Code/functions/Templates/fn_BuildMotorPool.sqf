@@ -582,7 +582,7 @@ if (count _parkedArmorClasses > 0) then {
     
     _sarmor = [_armor, _pos, _dir, _centerPos, _rotateDir] call _fnc_CreateVehicle;
 	
-	_sarmor setfuel random [0.01, 0.05, 0.1];
+	_sarmor setfuel random [0.05, 0.10, 0.15];
 	_sarmor setdamage random [0.25, 0.5, 0.9];
 	
 
