@@ -25,7 +25,7 @@ a3e_arr_Escape_StartPositionGuardTypes = [
 	"OPTRE_UNSC_Marine_Soldier_Grenadier"
 	,"OPTRE_UNSC_Marine_Soldier_Rifleman_Light"
 	,"OPTRE_UNSC_Marine_Soldier_Autorifleman"
-	,"OPTRE_UNSC_Marine_Soldier_Rifleman_AR"];
+	,"OPTRE_UNSC_Marine_Soldier_Rifleman_AR_DES"];
 
 // Prison backpack secondary weapon (and corresponding magazine type).
 a3e_arr_PrisonBackpackWeapons = [];
@@ -356,8 +356,6 @@ a3e_arr_Escape_InfantryTypes = [
 	,"OPTRE_UNSC_Marine_Soldier_Autorifleman"
 	,"OPTRE_UNSC_Marine_Soldier_Autorifleman"
 	,"OPTRE_UNSC_Marine_Soldier_Autorifleman"
-	,"OPTRE_UNSC_Marine_Soldier_AT_Specialist"
-	,"OPTRE_UNSC_Marine_Soldier_AT_Specialist"
 	,"OPTRE_UNSC_Marine_Soldier_Demolitions"
 	,"OPTRE_UNSC_Marine_Soldier_Demolitions"
 	,"OPTRE_UNSC_Marine_Soldier_Rifleman_AR"
@@ -402,8 +400,6 @@ a3e_arr_Escape_InfantryTypes_Ind = [
 	,"OPTRE_UNSC_Marine_Soldier_Autorifleman"
 	,"OPTRE_UNSC_Marine_Soldier_Autorifleman"
 	,"OPTRE_UNSC_Marine_Soldier_Autorifleman"
-	,"OPTRE_UNSC_Marine_Soldier_AT_Specialist"
-	,"OPTRE_UNSC_Marine_Soldier_AT_Specialist"
 	,"OPTRE_UNSC_Marine_Soldier_Demolitions"
 	,"OPTRE_UNSC_Marine_Soldier_Demolitions"
 	,"OPTRE_UNSC_Marine_Soldier_Rifleman_AR"
