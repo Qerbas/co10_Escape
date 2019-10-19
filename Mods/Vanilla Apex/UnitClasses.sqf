@@ -30,14 +30,29 @@ a3e_arr_Escape_StartPositionGuardTypes = [
 // Prison backpack secondary weapon (and corresponding magazine type).
 a3e_arr_PrisonBackpackWeapons = [];
 a3e_arr_PrisonBackpackWeapons pushback ["hgun_ACPC2_F","9Rnd_45ACP_Mag"];
+a3e_arr_PrisonBackpackWeapons pushback ["hgun_ACPC2_snds_F","9Rnd_45ACP_Mag"];
 a3e_arr_PrisonBackpackWeapons pushback ["hgun_Rook40_F","16Rnd_9x21_Mag"];
-a3e_arr_PrisonBackpackWeapons pushback ["hgun_PDW2000_F","30Rnd_9x21_Mag"];
+a3e_arr_PrisonBackpackWeapons pushback ["hgun_Rook40_snds_F","16Rnd_9x21_Mag"];
 a3e_arr_PrisonBackpackWeapons pushback ["hgun_P07_khk_F","16Rnd_9x21_Mag"];
+a3e_arr_PrisonBackpackWeapons pushback ["hgun_P07_khk_Snds_F","16Rnd_9x21_Mag"];
+a3e_arr_PrisonBackpackWeapons pushback ["hgun_Pistol_heavy_01_F","11Rnd_45ACP_Mag"];
+a3e_arr_PrisonBackpackWeapons pushback ["hgun_Pistol_heavy_01_MRD_F","11Rnd_45ACP_Mag"];
+a3e_arr_PrisonBackpackWeapons pushback ["hgun_Pistol_heavy_01_snds_F","11Rnd_45ACP_Mag"];
 a3e_arr_PrisonBackpackWeapons pushback ["hgun_Pistol_heavy_02_F","6Rnd_45ACP_Cylinder"];
-a3e_arr_PrisonBackpackWeapons pushback ["hgun_P07_snds_F","30Rnd_9x21_Mag"];
-a3e_arr_PrisonBackpackWeapons pushback ["hgun_Rook40_snds_F","30Rnd_9x21_Mag"];
+a3e_arr_PrisonBackpackWeapons pushback ["hgun_Pistol_heavy_02_Yorris_F","6Rnd_45ACP_Cylinder"];
 a3e_arr_PrisonBackpackWeapons pushback ["hgun_Pistol_01_F","10Rnd_9x21_Mag"];
-a3e_arr_PrisonBackpackWeapons pushback ["SMG_05_F", "30Rnd_9x21_Mag_SMG_02"];
+a3e_arr_PrisonBackpackWeapons pushback ["hgun_PDW2000_F","30Rnd_9x21_Mag"];
+a3e_arr_PrisonBackpackWeapons pushback ["hgun_PDW2000_snds_F","30Rnd_9x21_Mag"];
+a3e_arr_PrisonBackpackWeapons pushback ["hgun_PDW2000_Holo_F","30Rnd_9x21_Mag"];
+a3e_arr_PrisonBackpackWeapons pushback ["hgun_PDW2000_Holo_snds_F","30Rnd_9x21_Mag"];
+a3e_arr_PrisonBackpackWeapons pushback ["SMG_01_F","30Rnd_45ACP_Mag_SMG_01"];
+a3e_arr_PrisonBackpackWeapons pushback ["SMG_01_Holo_F","30Rnd_45ACP_Mag_SMG_01"];
+a3e_arr_PrisonBackpackWeapons pushback ["SMG_01_ACO_F","30Rnd_45ACP_Mag_SMG_01"];
+a3e_arr_PrisonBackpackWeapons pushback ["SMG_01_Holo_pointer_snds_F","30Rnd_45ACP_Mag_SMG_01"];
+a3e_arr_PrisonBackpackWeapons pushback ["SMG_02_F","30Rnd_9x21_Mag_SMG_02"];
+a3e_arr_PrisonBackpackWeapons pushback ["SMG_02_ACO_F","30Rnd_9x21_Mag_SMG_02"];
+a3e_arr_PrisonBackpackWeapons pushback ["SMG_02_ARCO_pointg_F","30Rnd_9x21_Mag_SMG_02"];
+a3e_arr_PrisonBackpackWeapons pushback ["SMG_05_F","30Rnd_9x21_Mag_SMG_02"];
 
 // Random array. Civilian vehicle classes for ambient traffic.
 a3e_arr_Escape_MilitaryTraffic_CivilianVehicleClasses = [
