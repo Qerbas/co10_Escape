@@ -164,17 +164,7 @@ if(isNil("A3E_ClearedPositionDistance")) then {
 	A3E_ClearedPositionDistance = 500;
 };
 
-<<<<<<< HEAD
-// Build start position
-_fenceRotateDir = random 360;
-
-private _backPack = [A3E_StartPos, _fenceRotateDir] call selectRandom [a3e_fnc_BuildPrison, a3e_fnc_BuildPrison1, a3e_fnc_BuildPrison3];
-
-A3E_FenceIsCreated = true;
-publicVariable "A3E_FenceIsCreated";
-=======
 private _backpack = [] call A3E_fnc_createStartpos;
->>>>>>> master
 
 //### The following is a mission function now
 
