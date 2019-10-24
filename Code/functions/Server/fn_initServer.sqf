@@ -44,7 +44,7 @@ publicVariable "ACE_MedicalServer";
 //##############
 
 
-private ["_villagePatrolSpawnArea","_EnemyCount","_enemyMinSkill", "_enemyMaxSkill", "_searchChopperSearchTimeMin", "_searchChopperRefuelTimeMin", "_enemySpawnDistance", "_playerGroup", "_enemyFrequency", "_scriptHandle"];
+private ["_villagePatrolSpawnArea","_EnemyCount","_enemyMinSkill", "_enemyMaxSkill", "_searchChopperSearchTimeMin", "_searchChopperRefuelTimeMin", "_enemySpawnDistance", "_playerGroup", "_enemyFrequency", "_fenceRotateDir", "_scriptHandle"];
 
 _enemyFrequency = (Param_EnemyFrequency);
 _enemySpawnDistance = (Param_EnemySpawnDistance);
@@ -164,7 +164,6 @@ if(isNil("A3E_ClearedPositionDistance")) then {
 	A3E_ClearedPositionDistance = 500;
 };
 
-<<<<<<< HEAD
 // Build start position
 _fenceRotateDir = random 360;
 
@@ -172,9 +171,6 @@ private _backPack = [A3E_StartPos, _fenceRotateDir] call selectRandom [a3e_fnc_B
 
 A3E_FenceIsCreated = true;
 publicVariable "A3E_FenceIsCreated";
-=======
-private _backpack = [] call A3E_fnc_createStartpos;
->>>>>>> master
 
 //### The following is a mission function now
 
@@ -671,11 +667,13 @@ waitUntil {scriptDone _scriptHandle};
 					if ((_x distance A3E_StartPos) > 15 && (_x distance A3E_StartPos) < 100) exitWith {
 						A3E_EscapeHasStarted = true;
 						publicVariable "A3E_EscapeHasStarted";
+						systemChat "Player ran away!";
 					};
 					// If any player have picked up a weapon, escape has started
 					if (count weapons _x > 0) exitWith {
 						A3E_EscapeHasStarted = true;
 						publicVariable "A3E_EscapeHasStarted";
+						systemChat "Player has weapon!";
 					};
 				};
             } foreach call A3E_FNC_GetPlayers;
@@ -685,7 +683,7 @@ waitUntil {scriptDone _scriptHandle};
         //{
 		//	[[[_x], {(_this select 0) setCaptive false;}], "BIS_fnc_spawn", _x, false] call BIS_fnc_MP;
 		//} foreach call A3E_fnc_GetPlayers;
-	   diag_log "Server: Escape has started.";
+	   systemChat "Server: Escape has started.";
     };
 	//Spawn alarm watchdog
 	[_guardGroups] spawn {
