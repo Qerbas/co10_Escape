@@ -94,6 +94,7 @@ class CfgFunctions
 			class SelectExtractionZone {};
 			class RoadBlocks {};
 			class MissionFlow {};
+			class createStartpos {};
 		};
 		class Templates
 		{
