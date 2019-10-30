@@ -1,26 +1,134 @@
-version=12;
+version=53;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=513;
+	class ItemIDProvider
+	{
+		nextID=423;
+	};
+	class MarkerIDProvider
+	{
+		nextID=48;
+	};
+	class Camera
+	{
+		pos[]={4643.7622,27.709,4214.3311};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+    {* REQUIRE *}
+	"A3_Ui_F",
+	"A3_Modules_F",
+	"A3_Characters_F",
+	"A3_Boat_F_Boat_Transport_01",
+	"A3_Boat_F_Gamma_Boat_Civil_01"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=5;
+		class Item0
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Modules_F";
+			name="Arma 3 Alpha - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item2
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item3
+		{
+			className="A3_Boat_F";
+			name="Arma 3 Alpha - Boats and Submersibles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item4
+		{
+			className="A3_Boat_F_Gamma";
+			name="Arma 3 - Boats and Submersibles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+	};
+};
+randomSeed=12571914;
+class ScenarioData
+{
+	author="Elitehunter34";
+	wreckRemovalMaxTime=3600;
+};
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="cba_settings_hasSettingsFile";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"BOOL"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		nAttributes=1;
+	};
+};
+class Intro
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.1;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.1;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2008;
+		month=6;
+		day=24;
+		hour=15;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
 class Mission
 {
-	addOns[]=
-	{
-		{* REQUIRE *}
-		"thirsk",
-		"A3_Modules_F",
-		"a3_map_stratis",
-		"A3_Characters_F_BLUFOR",
-		"a3_characters_f",
-		"A3_Characters_F_Gamma"
-	};
-	addOnsAuto[]=
-	{
-		{* REQUIRE *}
-		"thirsk",
-		"A3_Modules_F",
-		"A3_Characters_F_BLUFOR",
-		"a3_characters_f",
-		"A3_Characters_F_Gamma"
-	};
-	randomSeed=12830120;
 	class Intel
 	{
 		briefingName="{* MISSION *} {* ISLANDNAME *} {* MOD *} {* VERSION *}";
@@ -38,513 +146,1132 @@ class Mission
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
 	};
-	class Groups
+	class Entities
 	{
-		items=5;
+		items=82;
 		class Item0
 		{
-			side="LOGIC";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={2688.4478,46.999763,2704.6689};
-					id=0;
-					side="LOGIC";
-					vehicle="Logic";
-					leader=1;
-					skill=0.60000002;
-					text="server";
-				};
-			};
-		};
-		class Item1
-		{
-			side="LOGIC";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={2641.5549,46.163582,2735.2915};
-					id=1;
-					side="LOGIC";
-					vehicle="Logic";
-					leader=1;
-					skill=0.60000002;
-					text="center";
-				};
-			};
-		};
-		class Item2
-		{
-			side="LOGIC";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={273.31494,-0.022017496,247.39899};
-					id=2;
-					side="LOGIC";
-					vehicle="Logic";
-					leader=1;
-					skill=0.60000002;
-					text="SouthWest";
-					description="limits used area of the map, together with NorthEast logic";
-				};
-			};
-		};
-		class Item3
-		{
-			side="LOGIC";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={4779.9824,-0.012979223,4751.8569};
-					id=3;
-					side="LOGIC";
-					vehicle="Logic";
-					leader=1;
-					skill=0.60000002;
-					text="NorthEast";
-					description="limits used area of the map, together with SouthWest logic";
-				};
-			};
-		};
-		class Item4
-		{
-			side="{* PLAYERSIDE *}";
-			class Vehicles
-			{
-				items=10;
-				class Item0
-				{
-					position[]={4710.3701,2,4827.6943};
-					id=4;
-					side="{* PLAYERSIDE *}";
-					vehicle="{* PLAYERUNIT_1 *}";
-					player="PLAYER COMMANDER";
-					leader=1;
-					rank="CAPTAIN";
-					skill=0.60000002;
-					text="p1";
-					init="{* PLAYER_INIT *}";
-				};
-				class Item1
-				{
-					position[]={4708.4873,2,4825.9521};
-					special="NONE";
-					id=5;
-					side="{* PLAYERSIDE *}";
-					vehicle="{* PLAYERUNIT_2 *}";
-					player="PLAY CDG";
-					rank="LIEUTENANT";
-					skill=0.60000002;
-					text="p4";
-					init="{* PLAYER_INIT *}";
-				};
-				class Item2
-				{
-					position[]={4707.7803,2,4828.499};
-					special="NONE";
-					id=6;
-					side="{* PLAYERSIDE *}";
-					vehicle="{* PLAYERUNIT_3 *}";
-					player="PLAY CDG";
-					rank="LIEUTENANT";
-					skill=0.60000002;
-					text="p2";
-					init="{* PLAYER_INIT *}";
-				};
-				class Item3
-				{
-					position[]={4707.6943,2,4827.1318};
-					special="NONE";
-					id=7;
-					side="{* PLAYERSIDE *}";
-					vehicle="{* PLAYERUNIT_4 *}";
-					player="PLAY CDG";
-					rank="LIEUTENANT";
-					skill=0.60000002;
-					text="p3";
-					init="{* PLAYER_INIT *}";
-				};
-				class Item4
-				{
-					position[]={4709.6064,2,4825.1919};
-					special="NONE";
-					id=8;
-					side="{* PLAYERSIDE *}";
-					vehicle="{* PLAYERUNIT_5 *}";
-					player="PLAY CDG";
-					rank="LIEUTENANT";
-					skill=0.60000002;
-					text="p5";
-					init="{* PLAYER_INIT *}";
-				};
-				class Item5
-				{
-					position[]={4711.0615,2,4825.2393};
-					special="NONE";
-					id=9;
-					side="{* PLAYERSIDE *}";
-					vehicle="{* PLAYERUNIT_6 *}";
-					player="PLAY CDG";
-					rank="LIEUTENANT";
-					skill=0.60000002;
-					text="p6";
-					init="{* PLAYER_INIT *}";
-				};
-				class Item6
-				{
-					position[]={4712.5498,2,4825.5967};
-					special="NONE";
-					id=10;
-					side="{* PLAYERSIDE *}";
-					vehicle="{* PLAYERUNIT_7 *}";
-					player="PLAY CDG";
-					rank="LIEUTENANT";
-					skill=0.59000003;
-					text="p7";
-					init="{* PLAYER_INIT *}";
-				};
-				class Item7
-				{
-					position[]={4713.5928,2,4826.4365};
-					special="NONE";
-					id=11;
-					side="{* PLAYERSIDE *}";
-					vehicle="{* PLAYERUNIT_8 *}";
-					player="PLAY CDG";
-					rank="LIEUTENANT";
-					skill=0.60000002;
-					text="p8";
-					init="{* PLAYER_INIT *}";
-				};
-				class Item8
-				{
-					position[]={4714.4131,2,4827.5303};
-					special="NONE";
-					id=12;
-					side="{* PLAYERSIDE *}";
-					vehicle="{* PLAYERUNIT_9 *}";
-					player="PLAY CDG";
-					rank="LIEUTENANT";
-					skill=0.60000002;
-					text="p9";
-					init="{* PLAYER_INIT *}";
-				};
-				class Item9
-				{
-					position[]={4715.0342,2,4828.6162};
-					special="NONE";
-					id=13;
-					side="{* PLAYERSIDE *}";
-					vehicle="{* PLAYERUNIT_10 *}";
-					player="PLAY CDG";
-					rank="LIEUTENANT";
-					skill=0.60000002;
-					text="p10";
-					init="{* PLAYER_INIT *}";
-				};
-			};
-		};
-	};
-	class Markers
-	{
-		items=42;
-		class Item0
-		{
+			dataType="Marker";
 			position[]={700.57281,16.612,534.7406};
 			name="drn_russianSearchChopperStartPosMarker";
 			type="Empty";
+			id=0;
 		};
 		class Item1
 		{
+			dataType="Marker";
 			position[]={2638.8901,46.104015,2733.9761};
 			name="center";
 			type="Empty";
 			colorName="ColorGreen";
+			id=1;
 		};
 		class Item2
 		{
+			dataType="Marker";
 			position[]={1439.5071,46.396198,3086.4456};
 			name="drn_insurgentAirfieldMarker";
 			type="Empty";
+			id=2;
 		};
 		class Item3
 		{
+			dataType="Marker";
 			position[]={1626.1709,46.396198,2945.1799};
 			name="drn_searchChopperStartPosMarker";
 			type="Empty";
+			id=3;
 		};
 		class Item4
 		{
+			dataType="Marker";
 			position[]={780.03833,16.612,539.83325};
 			name="drn_dropChopperStartPosMarker";
 			type="Empty";
+			id=4;
 		};
 		class Item5
 		{
+			dataType="Marker";
 			position[]={1091.691,14.346333,4752.5117};
 			name="TrafficMarker_NorthWest";
 			type="Empty";
+			id=5;
 		};
 		class Item6
 		{
+			dataType="Marker";
 			position[]={4379.7148,15.492354,4080.2231};
 			name="TrafficMarker_NorthEast";
 			type="Empty";
+			id=6;
 		};
 		class Item7
 		{
+			dataType="Marker";
 			position[]={1112.0527,23.63702,1183.2358};
 			name="TrafficMarker_SouthWest";
 			type="Empty";
+			id=7;
 		};
 		class Item8
 		{
+			dataType="Marker";
 			position[]={4095.2803,13.82773,1733.6951};
 			name="TrafficMarker_SouthEast";
 			type="Empty";
 			angle=1.0334752;
+			id=8;
 		};
 		class Item9
 		{
-			position[]={2075.8914,15.694818,916.36182};
+			dataType="Marker";
+			position[]={2234.5339,2.4525516,804.68457};
 			name="A3E_ExtractionPos8";
 			type="Empty";
-			angle=-31.875591;
+			angle=328.12436;
+			id=9;
 		};
 		class Item10
 		{
-			position[]={2111.2651,15.690704,921.68213};
-			name="A3E_ExtractionPos8_1";
+			dataType="Marker";
+			position[]={2101.2085,0,-1010.8837};
+			name="A3E_ExtractionSpawnPos8";
 			type="Empty";
-			angle=-31.875591;
+			angle=195.60378;
+			id=11;
+			atlOffset=4;
 		};
 		class Item11
 		{
-			position[]={2604.6279,-0.0086110467,-705.60193};
-			name="A3E_ExtractionSpawnPos8";
+			dataType="Marker";
+			position[]={3214.4849,6.0647922,434.5871};
+			name="A3E_ExtractionPos7";
 			type="Empty";
-			angle=-164.39619;
+			angle=138.89011;
+			id=12;
 		};
 		class Item12
 		{
-			position[]={3216.3242,9.3493376,503.64258};
-			name="A3E_ExtractionPos7";
+			dataType="Marker";
+			position[]={4373.748,0,-1223.2792};
+			name="A3E_ExtractionSpawnPos7";
 			type="Empty";
-			angle=138.89014;
+			angle=135.46036;
+			id=13;
+			atlOffset=4;
 		};
 		class Item13
 		{
-			position[]={4960.415,0.048964813,-1300.8542};
-			name="A3E_ExtractionSpawnPos7";
+			dataType="Marker";
+			position[]={3149.2139,9.2324858,390.00824};
+			name="A3E_ExtractionPos7_1";
 			type="Empty";
-			angle=135.4604;
+			angle=138.89011;
+			id=14;
+			atlOffset=6.1236992;
 		};
 		class Item14
 		{
-			position[]={3189.6816,9.2324858,496.46637};
-			name="A3E_ExtractionPos7_1";
+			dataType="Marker";
+			position[]={6775.2549,0,579.02814};
+			name="A3E_ExtractionSpawnPos6";
 			type="Empty";
-			angle=138.89014;
+			angle=149.1852;
+			id=16;
+			atlOffset=4;
 		};
 		class Item15
 		{
-			position[]={4362.4878,44.543892,1279.9073};
-			name="A3E_ExtractionPos6";
-			type="Empty";
-			angle=232.52238;
-		};
-		class Item16
-		{
-			position[]={6794.6484,-0.038013533,545.08832};
-			name="A3E_ExtractionSpawnPos6";
-			type="Empty";
-			angle=149.18523;
-		};
-		class Item17
-		{
-			position[]={4350.5015,44.509586,1246.6311};
-			name="A3E_ExtractionPos6_1";
-			type="Empty";
-			angle=272.70712;
-		};
-		class Item18
-		{
-			position[]={4554.9995,13.818017,2767.2432};
-			name="A3E_ExtractionPos5_1";
-			type="Empty";
-			angle=178.30997;
-		};
-		class Item19
-		{
-			position[]={4509.876,13.048575,2789.7039};
-			name="A3E_ExtractionPos5";
-			type="Empty";
-			angle=178.30997;
-		};
-		class Item20
-		{
+			dataType="Marker";
 			position[]={6737.4165,-0.044859186,2704.9358};
 			name="A3E_ExtractionSpawnPos5";
 			type="Empty";
-			angle=-125.98316;
+			angle=234.01677;
+			id=20;
+			atlOffset=3.9551408;
 		};
-		class Item21
+		class Item16
 		{
-			position[]={3937.3865,8.3913279,4221.6641};
-			name="A3E_ExtractionPos4";
-			type="Empty";
-			angle=193.78036;
-		};
-		class Item22
-		{
-			position[]={3968.3303,9.7506866,4210.5913};
-			name="A3E_ExtractionPos4_1";
-			type="Empty";
-			angle=201.49643;
-		};
-		class Item23
-		{
-			position[]={4793.2563,-0.033990629,5548.4648};
+			dataType="Marker";
+			position[]={-1476.429,0,1960.5861};
 			name="A3E_ExtractionSpawnPos4";
 			type="Empty";
-			angle=36.555702;
+			angle=36.555695;
+			id=23;
+			atlOffset=4;
 		};
-		class Item24
+		class Item17
 		{
-			position[]={2814.5881,48.027908,3871.2102};
-			name="A3E_ExtractionPos3";
-			type="Empty";
-			angle=-41.131382;
-		};
-		class Item25
-		{
-			position[]={2836.761,43.230263,3897.4536};
-			name="A3E_ExtractionPos3_1";
-			type="Empty";
-			angle=-41.131382;
-		};
-		class Item26
-		{
-			position[]={2658.95,-0.0074405414,5559.5552};
-			name="A3E_ExtractionSpawnPos3";
-			type="Empty";
-			angle=91.300072;
-		};
-		class Item27
-		{
-			position[]={1167.3672,26.278322,4323.2671};
-			name="A3E_ExtractionPos2_1";
-			type="Empty";
-			angle=357.54129;
-		};
-		class Item28
-		{
-			position[]={1166.1934,26.102072,4350.4858};
-			name="A3E_ExtractionPos2";
-			type="Empty";
-			angle=364.39459;
-		};
-		class Item29
-		{
-			position[]={-625.53839,-0.047635674,5498.1299};
+			dataType="Marker";
+			position[]={-1201.3956,0,4656.4922};
 			name="A3E_ExtractionSpawnPos2";
 			type="Empty";
-			angle=107.71697;
+			angle=107.71695;
+			id=29;
+			atlOffset=4;
 		};
-		class Item30
+		class Item18
 		{
-			position[]={699.74811,13.390341,2637.4636};
-			name="A3E_ExtractionPos1";
-			type="Empty";
-		};
-		class Item31
-		{
-			position[]={724.29974,11.43593,2636.1458};
-			name="A3E_ExtractionPos1_1";
-			type="Empty";
-		};
-		class Item32
-		{
-			position[]={-1125.5934,-0.0041673118,2716.4314};
+			dataType="Marker";
+			position[]={-1566.8055,0,3492.1887};
 			name="A3E_ExtractionSpawnPos1";
 			type="Empty";
-			angle=296.77747;
+			angle=296.77737;
+			id=32;
+			atlOffset=4;
 		};
-		class Item33
+		class Item19
 		{
+			dataType="Marker";
 			position[]={3464.9814,12.555333,4790.7524};
 			name="Respawn_east";
 			type="Empty";
 			colorName="ColorRed";
+			id=33;
 		};
-		class Item34
+		class Item20
 		{
+			dataType="Marker";
 			position[]={4716.6592,2.1958313,4808.0415};
 			name="Respawn_west";
 			type="Empty";
 			colorName="ColorBlue";
+			id=34;
 		};
-		class Item35
+		class Item21
 		{
+			dataType="Marker";
 			position[]={3471.5908,13.671216,4777.4185};
 			name="Boot_Hill";
 			type="Empty";
+			id=35;
 		};
-		class Item36
+		class Item22
 		{
+			dataType="Marker";
 			position[]={3904.1895,10.003161,4186.6484};
 			name="RoadBlockNullRoad";
 			type="Empty";
 			colorName="ColorRed";
+			id=36;
 		};
-		class Item37
+		class Item23
 		{
+			dataType="Marker";
 			position[]={2367.3926,21.224915,4681.5088};
 			name="TrafficMarker_North";
 			type="Empty";
+			id=37;
 		};
-		class Item38
+		class Item24
 		{
+			dataType="Marker";
 			position[]={4261.9336,12.249943,2591.3267};
 			name="TrafficMarker_East";
 			type="Empty";
+			id=38;
 		};
-		class Item39
+		class Item25
 		{
+			dataType="Marker";
 			position[]={2128.469,16.397287,998.23376};
 			name="TrafficMarker_South";
 			type="Empty";
+			id=39;
 		};
-		class Item40
+		class Item26
 		{
+			dataType="Marker";
 			position[]={618.04114,28.786539,2482.4229};
 			name="TrafficMarker_West";
 			type="Empty";
+			id=40;
 		};
-		class Item41
+		class Item27
 		{
+			dataType="Marker";
 			position[]={1586.5376,46.396156,3073.717};
 			name="TrafficMarker_AirField";
 			type="Empty";
+			id=41;
+		};
+		class Item28
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={2688.4478,46.999763,2704.6689};
+			};
+			name="server";
+			id=42;
+			type="Logic";
+		};
+		class Item29
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={2641.5549,46.163582,2735.2915};
+			};
+			name="center";
+			id=43;
+			type="Logic";
+		};
+		class Item30
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={273.31494,-0.0077422718,247.39899};
+			};
+			name="SouthWest";
+			description="limits used area of the map, together with NorthEast logic";
+			id=44;
+			type="Logic";
+			atlOffset=3.9922578;
+		};
+		class Item31
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4779.9824,-0.0045640371,4751.8569};
+			};
+			name="NorthEast";
+			description="limits used area of the map, together with SouthWest logic";
+			id=45;
+			type="Logic";
+			atlOffset=3.995436;
+		};
+		class Item32
+		{
+			dataType="Group";
+			side="{* PLAYERSIDE *}";
+			class Entities
+			{
+				items=10;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4710.3701,2.0014389,4827.7939};
+					};
+					side="{* PLAYERSIDE *}";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CAPTAIN";
+						init="{* PLAYER_INIT *}";
+						name="p1";
+						isPlayer=1;
+						isPlayable=1;
+					};
+					id=47;
+					type="{* PLAYERUNIT_1 *}";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4708.4873,2.0014389,4826.002};
+					};
+					side="{* PLAYERSIDE *}";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="LIEUTENANT";
+						init="{* PLAYER_INIT *}";
+						name="p4";
+						isPlayable=1;
+					};
+					id=48;
+					type="{* PLAYERUNIT_2 *}";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4707.7803,2.0014389,4828.5488};
+					};
+					side="{* PLAYERSIDE *}";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="LIEUTENANT";
+						init="{* PLAYER_INIT *}";
+						name="p2";
+						isPlayable=1;
+					};
+					id=49;
+					type="{* PLAYERUNIT_3 *}";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4707.6943,2.0014389,4827.1816};
+					};
+					side="{* PLAYERSIDE *}";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="LIEUTENANT";
+						init="{* PLAYER_INIT *}";
+						name="p3";
+						isPlayable=1;
+					};
+					id=50;
+					type="{* PLAYERUNIT_4 *}";
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4709.6064,2.0014389,4825.2417};
+					};
+					side="{* PLAYERSIDE *}";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="LIEUTENANT";
+						init="{* PLAYER_INIT *}";
+						name="p5";
+						isPlayable=1;
+					};
+					id=51;
+					type="{* PLAYERUNIT_5 *}";
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4711.0615,2.0014389,4825.2891};
+					};
+					side="{* PLAYERSIDE *}";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="LIEUTENANT";
+						init="{* PLAYER_INIT *}";
+						name="p6";
+						isPlayable=1;
+					};
+					id=52;
+					type="{* PLAYERUNIT_6 *}";
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4712.5498,2.0014389,4825.6465};
+					};
+					side="{* PLAYERSIDE *}";
+					flags=4;
+					class Attributes
+					{
+						skill=0.59000003;
+						rank="LIEUTENANT";
+						init="{* PLAYER_INIT *}";
+						name="p7";
+						isPlayable=1;
+					};
+					id=53;
+					type="{* PLAYERUNIT_7 *}";
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4713.5928,2.0014389,4826.4863};
+					};
+					side="{* PLAYERSIDE *}";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="LIEUTENANT";
+						init="{* PLAYER_INIT *}";
+						name="p8";
+						isPlayable=1;
+					};
+					id=54;
+					type="{* PLAYERUNIT_8 *}";
+				};
+				class Item8
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4714.4131,2.0014389,4827.5801};
+						angles[]={0.89898831,0,1.0068092};
+					};
+					side="{* PLAYERSIDE *}";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="LIEUTENANT";
+						init="{* PLAYER_INIT *}";
+						name="p9";
+						isPlayable=1;
+					};
+					id=55;
+					type="{* PLAYERUNIT_9 *}";
+				};
+				class Item9
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4715.0342,2.0014389,4828.666};
+					};
+					side="{* PLAYERSIDE *}";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="LIEUTENANT";
+						init="{* PLAYER_INIT *}";
+						name="p10";
+						isPlayable=1;
+					};
+					id=56;
+					type="{* PLAYERUNIT_10 *}";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=46;
+		};
+		class Item33
+		{
+			dataType="Marker";
+			position[]={4700.6543,5.4906301,3145.6096};
+			name="A3E_ExtractionPos5_1";
+			type="Empty";
+			angle=178.30997;
+			id=60;
+		};
+		class Item34
+		{
+			dataType="Marker";
+			position[]={4684.7466,4.6094737,3201.6577};
+			name="A3E_ExtractionPos5";
+			type="Empty";
+			angle=178.30997;
+			id=61;
+		};
+		class Item35
+		{
+			dataType="Trigger";
+			position[]={4700.6553,5.4905567,3145.6082};
+			class Attributes
+			{
+				sizeA=0;
+				sizeB=0;
+			};
+			id=62;
+			type="EmptyDetector";
+		};
+		class Item36
+		{
+			dataType="Trigger";
+			position[]={4684.7461,4.6095939,3201.656};
+			class Attributes
+			{
+				sizeA=0;
+				sizeB=0;
+			};
+			id=63;
+			type="EmptyDetector";
+		};
+		class Item37
+		{
+			dataType="Marker";
+			position[]={4367.8848,4.2559328,847.34637};
+			name="A3E_ExtractionPos6";
+			type="Empty";
+			angle=232.52231;
+			id=123;
+		};
+		class Item38
+		{
+			dataType="Marker";
+			position[]={4321.3823,5.3837514,828.76404};
+			name="A3E_ExtractionPos6_1";
+			type="Empty";
+			angle=272.70712;
+			id=124;
+		};
+		class Item39
+		{
+			dataType="Trigger";
+			position[]={4321.3843,5.3835411,828.76227};
+			class Attributes
+			{
+				sizeA=0;
+				sizeB=0;
+			};
+			id=125;
+			type="EmptyDetector";
+		};
+		class Item40
+		{
+			dataType="Trigger";
+			position[]={4367.8838,4.2558293,847.34454};
+			class Attributes
+			{
+				sizeA=0;
+				sizeB=0;
+			};
+			id=126;
+			type="EmptyDetector";
+		};
+		class Item41
+		{
+			dataType="Trigger";
+			position[]={3149.2112,9.2327547,390.00977};
+			class Attributes
+			{
+				sizeA=0;
+				sizeB=0;
+			};
+			id=142;
+			type="EmptyDetector";
+			atlOffset=6.1236992;
+		};
+		class Item42
+		{
+			dataType="Trigger";
+			position[]={3214.4834,6.0649605,434.58984};
+			class Attributes
+			{
+				sizeA=0;
+				sizeB=0;
+			};
+			id=143;
+			type="EmptyDetector";
+		};
+		class Item43
+		{
+			dataType="Trigger";
+			position[]={2234.5322,2.4527571,804.68506};
+			angle=2.6265998;
+			class Attributes
+			{
+				sizeA=0;
+				sizeB=0;
+			};
+			id=162;
+			type="EmptyDetector";
+		};
+		class Item44
+		{
+			dataType="Marker";
+			position[]={2195.9312,3.1638141,775.37549};
+			name="A3E_ExtractionPos8_1";
+			type="Empty";
+			angle=328.12436;
+			id=182;
+		};
+		class Item45
+		{
+			dataType="Trigger";
+			position[]={2195.9312,3.1638432,775.37579};
+			angle=2.6265996;
+			class Attributes
+			{
+				sizeA=0;
+				sizeB=0;
+			};
+			id=183;
+			type="EmptyDetector";
+		};
+		class Item46
+		{
+			dataType="Marker";
+			position[]={285.67065,2.8104975,3592.5815};
+			name="A3E_ExtractionPos1";
+			type="Empty";
+			id=196;
+		};
+		class Item47
+		{
+			dataType="Trigger";
+			position[]={285.668,2.8104186,3592.583};
+			class Attributes
+			{
+				sizeA=0;
+				sizeB=0;
+			};
+			id=198;
+			type="EmptyDetector";
+		};
+		class Item48
+		{
+			dataType="Trigger";
+			position[]={333.87894,5.3593416,3638.5144};
+			class Attributes
+			{
+				sizeA=0;
+				sizeB=0;
+			};
+			id=200;
+			type="EmptyDetector";
+		};
+		class Item49
+		{
+			dataType="Marker";
+			position[]={333.8804,5.3593779,3638.5142};
+			name="A3E_ExtractionPos1_1";
+			type="Empty";
+			id=197;
+		};
+		class Item50
+		{
+			dataType="Marker";
+			position[]={310.03842,2.1046486,1988.4099};
+			name="A3E_ExtractionPos4_1";
+			type="Empty";
+			angle=201.49637;
+			id=214;
+		};
+		class Item51
+		{
+			dataType="Trigger";
+			position[]={310.0365,2.1044455,1988.4092};
+			class Attributes
+			{
+				sizeA=0;
+				sizeB=0;
+			};
+			id=216;
+			type="EmptyDetector";
+		};
+		class Item52
+		{
+			dataType="Marker";
+			position[]={292.00409,2.3173656,2030.5929};
+			name="A3E_ExtractionPos4";
+			type="Empty";
+			angle=193.7803;
+			id=217;
+		};
+		class Item53
+		{
+			dataType="Trigger";
+			position[]={292.00192,2.3170991,2030.593};
+			class Attributes
+			{
+				sizeA=0;
+				sizeB=0;
+			};
+			id=218;
+			type="EmptyDetector";
+		};
+		class Item54
+		{
+			dataType="Marker";
+			position[]={746.77393,4.7010226,4195.7627};
+			name="A3E_ExtractionPos2_1";
+			type="Empty";
+			angle=357.54117;
+			id=221;
+		};
+		class Item55
+		{
+			dataType="Trigger";
+			position[]={746.77222,4.7008271,4195.7637};
+			class Attributes
+			{
+				sizeA=0;
+				sizeB=0;
+			};
+			id=223;
+			type="EmptyDetector";
+		};
+		class Item56
+		{
+			dataType="Marker";
+			position[]={774.74017,2.4494288,4262.8013};
+			name="A3E_ExtractionPos2";
+			type="Empty";
+			angle=4.3945689;
+			id=253;
+		};
+		class Item57
+		{
+			dataType="Trigger";
+			position[]={774.73944,2.449234,4262.8027};
+			class Attributes
+			{
+				sizeA=0;
+				sizeB=0;
+			};
+			id=254;
+			type="EmptyDetector";
+		};
+		class Item58
+		{
+			dataType="Marker";
+			position[]={2658.4688,0,6223.1948};
+			name="A3E_ExtractionSpawnPos9";
+			type="Empty";
+			angle=91.299988;
+			id=316;
+			atlOffset=4;
+		};
+		class Item59
+		{
+			dataType="Marker";
+			position[]={2666.5051,3.3064885,4823.4414};
+			name="A3E_ExtractionPos9";
+			type="Empty";
+			angle=328.1239;
+			id=326;
+		};
+		class Item60
+		{
+			dataType="Trigger";
+			position[]={2666.5029,3.3066294,4823.4419};
+			class Attributes
+			{
+				sizeA=0;
+				sizeB=0;
+			};
+			id=328;
+			type="EmptyDetector";
+		};
+		class Item61
+		{
+			dataType="Marker";
+			position[]={2643.8035,2.9237514,4854.5195};
+			name="A3E_ExtractionPos9_1";
+			type="Empty";
+			angle=328.12387;
+			id=330;
+		};
+		class Item62
+		{
+			dataType="Trigger";
+			position[]={2643.8027,2.9238148,4854.5195};
+			class Attributes
+			{
+				sizeA=0;
+				sizeB=0;
+			};
+			id=331;
+			type="EmptyDetector";
+		};
+		class Item63
+		{
+			dataType="Marker";
+			position[]={4643.7622,2.7090001,4239.3311};
+			name="A3E_ExtractionPos3";
+			type="Empty";
+			angle=328.12396;
+			id=353;
+			atlOffset=0.00054121017;
+		};
+		class Item64
+		{
+			dataType="Trigger";
+			position[]={4643.7598,2.7087178,4239.3311};
+			class Attributes
+			{
+				sizeA=0;
+				sizeB=0;
+			};
+			id=354;
+			type="EmptyDetector";
+		};
+		class Item65
+		{
+			dataType="Marker";
+			position[]={4611.0859,2.7449999,4285.687};
+			name="A3E_ExtractionPos3_1";
+			type="Empty";
+			angle=328.12396;
+			id=355;
+			atlOffset=-0.00035619736;
+		};
+		class Item66
+		{
+			dataType="Trigger";
+			position[]={4611.0854,2.7454357,4285.6865};
+			class Attributes
+			{
+				sizeA=0;
+				sizeB=0;
+			};
+			id=356;
+			type="EmptyDetector";
+		};
+		class Item67
+		{
+			dataType="Marker";
+			position[]={6125.2002,0,5220.355};
+			name="A3E_ExtractionSpawnPos3";
+			type="Empty";
+			angle=91.299995;
+			id=357;
+			atlOffset=4;
+		};
+		class Item68
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3917.209,1.2435327,449.474};
+				angles[]={0,2.8973513,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				presence=0.25;
+			};
+			id=408;
+			type="C_Rubberboat";
+			atlOffset=2.7303045;
+		};
+		class Item69
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3921.8511,1.2435327,457.267};
+				angles[]={0,2.8973513,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				presence=0.25;
+			};
+			id=409;
+			type="C_Rubberboat";
+			atlOffset=2.3221452;
+		};
+		class Item70
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3290.272,1.2434444,889.45203};
+				angles[]={0,5.5528698,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				presence=0.25;
+			};
+			id=410;
+			type="C_Rubberboat";
+			atlOffset=2.7850001;
+		};
+		class Item71
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3295.397,1.2435682,892.49597};
+				angles[]={0,5.5528698,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				presence=0.25;
+			};
+			id=411;
+			type="C_Rubberboat";
+			atlOffset=2.385;
+		};
+		class Item72
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3478.2451,1.2434578,4625.9331};
+				angles[]={0,3.1862905,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=412;
+			type="C_Rubberboat";
+			atlOffset=2.1960001;
+		};
+		class Item73
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3485.104,1.2433019,4624.0029};
+				angles[]={0,3.1862905,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=413;
+			type="C_Rubberboat";
+			atlOffset=2.3970001;
+		};
+		class Item74
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1099.2223,1.2970161,4896.146};
+				angles[]={0,6.2773209,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				presence=0.24679263;
+			};
+			id=414;
+			type="C_Boat_Civil_01_F";
+			atlOffset=1.474903;
+		};
+		class Item75
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1087.7159,1.243207,4894.6748};
+				angles[]={0,4.6944642,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				presence=0.25;
+			};
+			id=416;
+			type="C_Rubberboat";
+			atlOffset=0.81099999;
+		};
+		class Item76
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1609.033,1.296998,2480.2151};
+			};
+			side="Empty";
+			class Attributes
+			{
+				presence=0.25;
+			};
+			id=417;
+			type="C_Boat_Civil_01_rescue_F";
+			atlOffset=1.753;
+		};
+		class Item77
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1598.7725,1.2435327,2480.0054};
+				angles[]={0,4.740962,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				presence=0.25;
+			};
+			id=418;
+			type="C_Rubberboat";
+			atlOffset=1.7585559;
+		};
+		class Item78
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3101.9231,1.2973956,1090.1281};
+				angles[]={0,2.685451,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				presence=0.25;
+			};
+			id=419;
+			type="C_Boat_Civil_01_F";
+			atlOffset=1.52;
+		};
+		class Item79
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3576.0601,1.243058,1349.077};
+				angles[]={0,4.9813266,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				presence=0.25;
+			};
+			id=420;
+			type="C_Rubberboat";
+			atlOffset=2.3139999;
+		};
+		class Item80
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3108.635,1.243135,1089.962};
+				angles[]={0,2.7043178,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				presence=0.25;
+			};
+			id=421;
+			type="C_Rubberboat";
+			atlOffset=1.892;
+		};
+		class Item81
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3580.344,1.2429316,1355.447};
+				angles[]={0,5.0343847,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				presence=0.25;
+			};
+			id=422;
+			type="C_Rubberboat";
+			atlOffset=2.1570001;
 		};
 	};
 };
-class Intro
+class OutroLoose
 {
-	addOns[]=
-	{
-		"thirsk"
-	};
-	randomSeed=16265204;
 	class Intel
 	{
 		timeOfChanges=1800.0002;
@@ -565,36 +1292,6 @@ class Intro
 };
 class OutroWin
 {
-	addOns[]=
-	{
-		"thirsk"
-	};
-	randomSeed=6958699;
-	class Intel
-	{
-		timeOfChanges=1800.0002;
-		startWeather=0.1;
-		startWind=0.1;
-		startWaves=0.1;
-		forecastWeather=0.1;
-		forecastWind=0.1;
-		forecastWaves=0.1;
-		forecastLightnings=0.1;
-		year=2008;
-		month=6;
-		day=24;
-		hour=15;
-		startFogDecay=0.013;
-		forecastFogDecay=0.013;
-	};
-};
-class OutroLoose
-{
-	addOns[]=
-	{
-		"thirsk"
-	};
-	randomSeed=10876043;
 	class Intel
 	{
 		timeOfChanges=1800.0002;
