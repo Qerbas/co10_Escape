@@ -54,12 +54,8 @@ drn_fnc_Escape_OnSpawnGeneralSoldierUnit = {
 		};
 	};
 	//Chance for random attachment
-	if(((random 100 < 15) && (!_nighttime)) OR ((random 100 < 70) && (_nighttime))) then {
-		if(random 100 < 70) then {
+	if(_nighttime) then {
 			_this addPrimaryWeaponItem "acc_flashlight";
-		} else {
-			_this addPrimaryWeaponItem "acc_pointer_IR";
-		};
 	};
 	
 	//Bipod chance
