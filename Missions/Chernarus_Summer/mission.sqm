@@ -126,12 +126,12 @@ class Mission
 		class Item1
 		{
 			dataType="Marker";
-			position[]={6489.3418,318.24802,7906.9297};
+			position[]={6748.9199,303.06079,7899.4863};
 			name="center";
 			type="Empty";
 			colorName="ColorGreen";
 			id=1;
-			atlOffset=0.0020141602;
+			atlOffset=-2.5336609;
 		};
 		class Item2
 		{
@@ -417,7 +417,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={6456.5396,317.47974,7873.6079};
+				position[]={6749.4634,305.63519,7901.021};
 			};
 			name="center";
 			id=43;
@@ -428,7 +428,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={813.13776,44.307175,2287.5181};
+				position[]={1320.6694,0,1431.8088};
 			};
 			name="SouthWest";
 			id=44;
@@ -439,7 +439,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={13266.808,60.012852,13511.963};
+				position[]={14539.075,5.9025731,13342.159};
 			};
 			name="NorthEast";
 			id=45;
