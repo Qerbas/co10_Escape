@@ -148,7 +148,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=82;
+		items=84;
 		class Item0
 		{
 			dataType="Marker";
@@ -423,26 +423,26 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={273.31494,-0.0077422718,247.39899};
+				position[]={105.6894,0,228.44604};
 			};
 			name="SouthWest";
 			description="limits used area of the map, together with NorthEast logic";
 			id=44;
 			type="Logic";
-			atlOffset=3.9922578;
+			atlOffset=4;
 		};
 		class Item31
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={4779.9824,-0.0045640371,4751.8569};
+				position[]={4894.0313,0,5013.0903};
 			};
 			name="NorthEast";
 			description="limits used area of the map, together with SouthWest logic";
 			id=45;
 			type="Logic";
-			atlOffset=3.995436;
+			atlOffset=4;
 		};
 		class Item32
 		{
@@ -1267,6 +1267,36 @@ class Mission
 			id=422;
 			type="C_Rubberboat";
 			atlOffset=2.1570001;
+		};
+		class Item82
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4735.5405,1.2435327,4849.4805};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=423;
+			type="C_Rubberboat";
+			atlOffset=1.1123047;
+		};
+		class Item83
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4722.6387,1.2435327,4863.2314};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=424;
+			type="C_Rubberboat";
+			atlOffset=1.1740723;
 		};
 	};
 };
