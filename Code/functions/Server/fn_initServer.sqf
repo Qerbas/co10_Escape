@@ -224,16 +224,7 @@ private _UseMotorPools = Param_MotorPools;
 
 // Create motorized search group
 
-[_enemyFrequency, _enemyMinSkill, _enemyMaxSkill] spawn {
-	params ["_enemyFrequency", "_enemyMinSkill", "_enemyMaxSkill"];
-	private _spawnSegment = [] call A3E_fnc_FindSpawnRoad;
-	
-	if(!isNull _spawnSegment) then {
-		[getPos _spawnSegment, drn_searchAreaMarkerName, _enemyFrequency, _enemyMinSkill, _enemyMaxSkill, A3E_Debug] execVM "Scripts\Escape\CreateMotorizedSearchGroup.sqf";
-	} else {
-		diag_log "Unable to find spawn road for initial Motorized Searchgroup";
-	};
-};
+
 
 
 // Start garbage collector
