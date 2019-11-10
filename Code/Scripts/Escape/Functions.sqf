@@ -68,8 +68,6 @@ drn_fnc_Escape_OnSpawnGeneralSoldierUnit = {
 	
 	
 	//Chance for random attachment
-	if(_nighttime) then {
-			_this addPrimaryWeaponItem "acc_flashlight";
 	if((random 100 < 15) OR (_nighttime)) then {
 		if(random 100 < 70 || (Param_NoNightvision>0)) then {
 			_this addPrimaryWeaponItem "acc_flashlight";
