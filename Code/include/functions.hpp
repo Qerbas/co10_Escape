@@ -19,7 +19,6 @@ class CfgFunctions
 		class findFlatAreaNear{};
 		class RotatePosition{};
 		class GetEnemyCount{};
-		class paramDaytime{};
 		class systemChat {};
 		class groupChat {};
 		class addUserActions {};

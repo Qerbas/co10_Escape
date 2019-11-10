@@ -87,10 +87,10 @@ switch (Param_TimeOfDay) do {
 		_hour = round(random(24));
 	};
     case 25: {
-		_hour = 6+round(random(12));  //Between 0600 and 1800
+		_hour = 6+round(random(10));  //Between 0600 and 1600
 	};
 	case 26: { 
-		_hour = 20 + round(random(8)); //Between 2000 and 0400
+		_hour = 17 + round(random(11)); //Between 1700 and 0400
 		_hour = _hour % 24;
 	};
     default { _hour = Param_TimeOfDay };
@@ -171,6 +171,8 @@ private _backpack = [] call A3E_fnc_createStartpos;
 [true] call drn_fnc_InitVillageMarkers; 
 [true] call drn_fnc_InitAquaticPatrolMarkers; 
 
+//Wait for players to actually arrive ingame. This may be a long time if server is set to persistent
+waituntil{uisleep 1; count([] call A3E_FNC_GetPlayers)>0};
 
 _playerGroup = [] call A3E_fnc_GetPlayerGroup;
 
@@ -221,11 +223,6 @@ private _UseMotorPools = Param_MotorPools;
 
 // Initialize search leader
 [drn_searchAreaMarkerName, A3E_Debug] execVM "Scripts\Escape\SearchLeader.sqf";
-
-// Create motorized search group
-
-
-
 
 // Start garbage collector
 [_playerGroup, 750, A3E_Debug] spawn drn_fnc_CL_RunGarbageCollector;
@@ -622,7 +619,7 @@ waitUntil {scriptDone _scriptHandle};
 	A3E_fnc_revealPlayers = {
 		private _guardGroup = _this;
 		{
-			_guardGroup reveal _x;
+			_guardGroup reveal [_x,1.5];
 		} foreach call A3E_fnc_GetPlayers;
 	};
 	A3E_fnc_soundAlarm = {
@@ -630,12 +627,12 @@ waitUntil {scriptDone _scriptHandle};
 		if(isNil("A3E_SoundPrisonAlarm")) then {
 			A3E_SoundPrisonAlarm = true;
 			publicvariable "A3E_SoundPrisonAlarm";
-			sleep 30;
-			A3E_SoundPrisonAlarm = false;
-			publicvariable "A3E_SoundPrisonAlarm";
 			{
 				_x spawn A3E_fnc_revealPlayers;
 			} foreach _guardGroups;
+			sleep 30;
+			A3E_SoundPrisonAlarm = false;
+			publicvariable "A3E_SoundPrisonAlarm";
 		};
 	};
     // Start thread that waits for escape to start
