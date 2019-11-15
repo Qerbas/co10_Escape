@@ -600,7 +600,16 @@ waitUntil {scriptDone _scriptHandle};
 					_unit unlinkItem _hmd;
 				};
             };
-            
+			private["_nighttime"];
+			if(daytime > 19 OR daytime < 8) then {
+		        _nighttime = true;
+	        } else {
+		        _nighttime = false;
+		    };
+			if (_nighttime) then {
+			    _unit addPrimaryWeaponItem "acc_flashlight";
+			};
+	
             //_unit setSkill a3e_var_Escape_enemyMinSkill;
 			//[_unit, a3e_var_Escape_enemyMinSkill] call EGG_EVO_skill;
 			
