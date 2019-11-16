@@ -631,7 +631,7 @@ a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind = [
 	"CUP_I_LR_MG_RACS"
 	,"CUP_I_LR_MG_RACS"
 	,"CUP_I_M113_RACS"
-	,"CUP_I_M119_RACS"];
+	,"CUP_I_M163_RACS"];
 
 // Random array. Vehicle classes (preferrably trucks) transporting enemy reinforcements.
 a3e_arr_Escape_ReinforcementTruck_vehicleClasses = [
