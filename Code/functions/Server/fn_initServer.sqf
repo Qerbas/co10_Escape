@@ -419,7 +419,9 @@ private _UseMotorPools = Param_MotorPools;
 			}];
 		} foreach _crew;
 		
-		clearitemcargoglobal _vehicle; 
+		clearitemcargoglobal _vehicle;
+        clearWeaponCargoGlobal _vehicle;
+        clearMagazineCargoGlobal _vehicle;			
 		
 		if (random 100 < 20) then {
 			private ["_weaponItem"];
@@ -431,6 +433,12 @@ private _UseMotorPools = Param_MotorPools;
 		};	
 		if (random 100 < 80) then {
            _vehicle addItemCargoglobal ["firstaidkit", 3];	
+		};
+		if (random 100 < 80) then {
+           _vehicle addMagazineCargoglobal ["smokeshellRed", 2];	
+		};
+		if (random 100 < 80) then {
+           _vehicle addMagazineCargoglobal ["Chemlight_green", 5];	
 		};
 	};
 	
