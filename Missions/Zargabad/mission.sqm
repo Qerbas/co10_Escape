@@ -65,7 +65,8 @@ class Mission
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
 		year=2009;
-		day=29;
+		month=3;
+		day=16;
 		hour=11;
 		startFogDecay=0.014;
 		forecastFogDecay=0.014;

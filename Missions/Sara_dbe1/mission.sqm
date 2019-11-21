@@ -73,7 +73,8 @@ class Mission
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
 		year=2007;
-		month=7;
+		month=4;
+		day=11;
 		hour=10;
 		minute=20;
 		startFogDecay=0.014;

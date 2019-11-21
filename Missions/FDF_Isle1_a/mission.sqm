@@ -140,8 +140,8 @@ class Mission
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
 		year=2008;
-		month=2;
-		day=14;
+		month=8;
+		day=8;
 		hour=9;
 		minute=-27;
 		startFogDecay=0.013;

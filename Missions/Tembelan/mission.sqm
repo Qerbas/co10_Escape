@@ -90,7 +90,7 @@ class Mission
 		forecastLightnings=0.1;
 		year=2015;
 		month=3;
-		day=5;
+		day=3;
 		hour=11;
 		minute=0;
 		startFogDecay=0.014;

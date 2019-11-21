@@ -125,7 +125,7 @@ class Mission
 		forecastLightnings=0.1;
 		year=2008;
 		month=6;
-		day=24;
+		day=13;
 		hour=15;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;

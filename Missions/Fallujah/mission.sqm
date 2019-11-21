@@ -104,7 +104,7 @@ class Mission
 		forecastLightnings=0.099999994;
 		year=2008;
 		month=6;
-		day=24;
+		day=8;
 		hour=15;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
