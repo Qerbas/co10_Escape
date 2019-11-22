@@ -31,6 +31,7 @@ a3e_arr_Escape_StartPositionGuardTypes = [
 
 // Prison backpack secondary weapon (and corresponding magazine type).
 a3e_arr_PrisonBackpackWeapons = [];
+//Pistols
 a3e_arr_PrisonBackpackWeapons pushback ["CUP_hgun_Colt1911","CUP_7Rnd_45ACP_1911"];
 a3e_arr_PrisonBackpackWeapons pushback ["CUP_hgun_Colt1911","CUP_7Rnd_45ACP_1911"];
 a3e_arr_PrisonBackpackWeapons pushback ["CUP_hgun_Colt1911","CUP_7Rnd_45ACP_1911"];
@@ -86,8 +87,7 @@ a3e_arr_PrisonBackpackWeapons pushback ["CUP_hgun_Deagle","CUP_7Rnd_50AE_Deagle"
 a3e_arr_PrisonBackpackWeapons pushback ["CUP_hgun_Deagle","CUP_7Rnd_50AE_Deagle"];
 a3e_arr_PrisonBackpackWeapons pushback ["CUP_hgun_Deagle","CUP_7Rnd_50AE_Deagle"];
 a3e_arr_PrisonBackpackWeapons pushback ["CUP_hgun_Deagle","CUP_7Rnd_50AE_Deagle"];
-
-
+//SMGs
 a3e_arr_PrisonBackpackWeapons pushback ["CUP_hgun_Mac10","CUP_30Rnd_45ACP_MAC10_M"];
 a3e_arr_PrisonBackpackWeapons pushback ["CUP_hgun_Mac10","CUP_30Rnd_45ACP_MAC10_M"];
 a3e_arr_PrisonBackpackWeapons pushback ["CUP_hgun_Mac10","CUP_30Rnd_45ACP_MAC10_M"];
@@ -110,10 +110,10 @@ a3e_arr_PrisonBackpackWeapons pushback ["CUP_hgun_MicroUzi","CUP_30Rnd_9x19_UZI"
 a3e_arr_PrisonBackpackWeapons pushback ["CUP_hgun_MicroUzi","CUP_30Rnd_9x19_UZI"];
 a3e_arr_PrisonBackpackWeapons pushback ["CUP_hgun_MicroUzi","CUP_30Rnd_9x19_UZI"];
 a3e_arr_PrisonBackpackWeapons pushback ["CUP_hgun_MicroUzi","CUP_30Rnd_9x19_UZI"];
-a3e_arr_PrisonBackpackWeapons pushback ["CUP_hgun_MicroUzi_snds","CUP_30Rnd_9x19_UZI"];
-a3e_arr_PrisonBackpackWeapons pushback ["CUP_hgun_MicroUzi_snds","CUP_30Rnd_9x19_UZI"];
-a3e_arr_PrisonBackpackWeapons pushback ["CUP_hgun_MicroUzi_snds","CUP_30Rnd_9x19_UZI"];
-a3e_arr_PrisonBackpackWeapons pushback ["CUP_hgun_MicroUzi_snds","CUP_30Rnd_9x19_UZI"];
+a3e_arr_PrisonBackpackWeapons pushback ["CUP_hgun_MicroUzi","CUP_30Rnd_9x19_UZI"];
+a3e_arr_PrisonBackpackWeapons pushback ["CUP_hgun_MicroUzi","CUP_30Rnd_9x19_UZI"];
+a3e_arr_PrisonBackpackWeapons pushback ["CUP_hgun_MicroUzi","CUP_30Rnd_9x19_UZI"];
+a3e_arr_PrisonBackpackWeapons pushback ["CUP_hgun_MicroUzi","CUP_30Rnd_9x19_UZI"];
 a3e_arr_PrisonBackpackWeapons pushback ["CUP_hgun_MicroUzi_snds","CUP_30Rnd_9x19_UZI"];
 a3e_arr_PrisonBackpackWeapons pushback ["CUP_hgun_MicroUzi_snds","CUP_30Rnd_9x19_UZI"];
 a3e_arr_PrisonBackpackWeapons pushback ["CUP_hgun_MicroUzi_snds","CUP_30Rnd_9x19_UZI"];
@@ -177,6 +177,7 @@ a3e_arr_Escape_MilitaryTraffic_CivilianVehicleClasses = [
 	,"CUP_C_Octavia_CIV"
 	,"CUP_C_Octavia_CIV"
 	,"CUP_C_Octavia_CIV"
+	,"CUP_C_TT650_CIV"
 	,"CUP_C_Skoda_Blue_CIV"
 	,"CUP_C_Skoda_Green_CIV"
 	,"CUP_C_Skoda_Red_CIV"
@@ -211,10 +212,6 @@ a3e_arr_Escape_MilitaryTraffic_CivilianVehicleClasses = [
 	,"CUP_C_SUV_CIV"
 	,"CUP_C_Tractor_CIV"
 	,"CUP_C_Tractor_CIV"
-	,"CUP_C_Tractor_CIV"
-	,"CUP_C_Tractor_CIV"
-	,"CUP_C_Tractor_Old_CIV"
-	,"CUP_C_Tractor_Old_CIV"
 	,"CUP_C_Tractor_Old_CIV"
 	,"CUP_C_Tractor_Old_CIV"
 	,"CUP_C_Ural_Civ_03"
@@ -897,30 +894,16 @@ a3e_arr_Escape_EnemyCivilianCarTypes = [
 	,"CUP_C_Lada_Red_CIV"
 	,"CUP_C_SUV_CIV"
 	,"CUP_C_SUV_CIV"
-	,"CUP_C_Tractor_CIV"
-	,"CUP_C_Tractor_CIV"
-	,"CUP_C_Tractor_CIV"
-	,"CUP_C_Tractor_CIV"
-	,"CUP_C_Tractor_Old_CIV"
-	,"CUP_C_Tractor_Old_CIV"
-	,"CUP_C_Tractor_Old_CIV"
-	,"CUP_C_Tractor_Old_CIV"
 	,"CUP_C_Ural_Civ_03"
 	,"CUP_C_Ural_Civ_03"
 	,"CUP_C_Ural_Open_Civ_03"
 	,"CUP_C_Ural_Open_Civ_03"
-	,"CUP_C_TT650_RU"
-	,"CUP_C_TT650_RU"
-	,"CUP_C_TT650_RU"
     ,"CUP_C_Ural_Open_Civ_01"
 	,"CUP_C_Ural_Open_Civ_01"
 	,"CUP_C_Ural_Civ_02"
 	,"CUP_C_Ural_Civ_02"
 	,"CUP_C_Ural_Open_Civ_02"
 	,"CUP_C_Ural_Open_Civ_02"
-	,"CUP_C_TT650_TK"
-	,"CUP_C_TT650_TK"
-	,"CUP_C_TT650_TK"
 	,"CUP_C_S1203_CIV"
 	,"CUP_C_S1203_CIV"
 	,"CUP_C_S1203_CIV"
