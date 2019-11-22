@@ -934,6 +934,7 @@ a3e_arr_ComCenParkedVehicles = [
 // Random array. Enemies sometimes use civilian vehicles in their unconventional search for players. The following car types may be used.
 a3e_arr_Escape_EnemyCivilianCarTypes = [
 "CUP_C_Datsun"
+	"CUP_C_Datsun"
 	,"CUP_C_Datsun"
 	,"CUP_C_Datsun"
 	,"CUP_C_Datsun"
