@@ -178,6 +178,8 @@ a3e_arr_Escape_MilitaryTraffic_CivilianVehicleClasses = [
 	,"CUP_C_Octavia_CIV"
 	,"CUP_C_Octavia_CIV"
 	,"CUP_C_TT650_CIV"
+	,"CUP_C_TT650_CIV"
+	,"CUP_C_TT650_CIV"
 	,"CUP_C_Skoda_Blue_CIV"
 	,"CUP_C_Skoda_Green_CIV"
 	,"CUP_C_Skoda_Red_CIV"
