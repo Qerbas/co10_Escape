@@ -1450,6 +1450,34 @@
 			"mod" : "CUP Taki",
 			"replace" : {},
 			"name" : "co10_Escape_CUP_Ger_vs_Taki"
+		},
+	    {
+			"island" : "Utes",
+			"sqm": "utes",
+			"mod" : "CUP-US USMC",
+			"replace" : {},
+			"name" : "co10_Escape_CUP_SLA_vs_USMC"
+		},
+	    {
+			"island" : "Utes",
+			"sqm": "utes",
+			"mod" : "CUP-BAF w",
+			"replace" : {},
+			"name" : "co10_Escape_CUP_RU_vs_BAF"
+		},
+		{
+			"island" : "Utes",
+			"sqm": "utes",
+			"mod" : "CUP RU",
+			"replace" : {},
+			"name" : "co10_Escape_CUP_USMC_vs_RU"
+		},
+		{
+			"island" : "Utes",
+			"sqm": "utes",
+			"mod" : "CUP RU vs USMC-RACS",
+			"replace" : {},
+			"name" : "co10_Escape_CUP_RU_vs_USMC_and_RACS"
 		}
 	],
 	"Addons" : [

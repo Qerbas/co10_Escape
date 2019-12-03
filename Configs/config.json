@@ -603,6 +603,16 @@
 				"ISLAND" : "Kujari",
 				"ISLANDNAME" : "Kujari"
 				}
+		},
+		{
+			"name" : "Utes",
+			"class" : "utes",
+			"path" : "./Islands/utes/",
+			"replace" :
+				{
+				"ISLAND" : "Utes",
+				"ISLANDNAME" : "Utes"
+				}
 		}
 	],
 	"Missions" : [
@@ -971,6 +981,13 @@
 			"name" : "co10_Escape_BIS_NATO_vs_CSAT"
 		},
 		{
+			"island" : "Utes",
+			"sqm": "utes",
+			"mod" : "Vanilla",
+			"replace" : {},
+			"name" : "co10_Escape_BIS_NATO_vs_CSAT"
+		},
+		{
 			"island" : "Altis",
 			"sqm": "Altis",
 			"mod" : "Vanilla US",
@@ -1316,6 +1333,13 @@
 		{
 			"island" : "Kujari",
 			"sqm": "Kujari",
+			"mod" : "Vanilla US",
+			"replace" : {},
+			"name" : "co10_Escape_BIS_CSAT_vs_NATO"
+		},
+		{
+			"island" : "Utes",
+			"sqm": "utes",
 			"mod" : "Vanilla US",
 			"replace" : {},
 			"name" : "co10_Escape_BIS_CSAT_vs_NATO"
