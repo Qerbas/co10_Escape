@@ -123,8 +123,8 @@ class Mission
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
 		year=2008;
-		month=6;
-		day=24;
+		month=4;
+		day=9;
 		hour=15;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
