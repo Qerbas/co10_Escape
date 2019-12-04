@@ -949,6 +949,20 @@
 			"mod" : "RHS-US w",
 			"replace" : {},
 			"name" : "co10_Escape_RHS_RU_vs_US"
+		},
+		{
+			"island" : "Bukovina",
+			"sqm": "Bootcamp_ACR",
+			"mod" : "RHS w",
+			"replace" : {},
+			"name" : "co10_Escape_RHS_US_vs_RU"
+		},
+		{
+			"island" : "Bukovina",
+			"sqm": "Bootcamp_ACR",
+			"mod" : "RHS-US w",
+			"replace" : {},
+			"name" : "co10_Escape_RHS_RU_vs_US"
 		}
 	],
 	"Addons" : [

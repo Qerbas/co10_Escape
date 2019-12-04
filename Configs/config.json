@@ -613,6 +613,16 @@
 				"ISLAND" : "Utes",
 				"ISLANDNAME" : "Utes"
 				}
+		},
+		{
+			"name" : "Bukovina",
+			"class" : "Bootcamp_ACR",
+			"path" : "./Islands/Bootcamp_ACR/",
+			"replace" :
+				{
+				"ISLAND" : "Bukovina",
+				"ISLANDNAME" : "Bukovina"
+				}
 		}
 	],
 	"Missions" : [
@@ -988,6 +998,13 @@
 			"name" : "co10_Escape_BIS_NATO_vs_CSAT"
 		},
 		{
+			"island" : "Bukovina",
+			"sqm": "Bootcamp_ACR",
+			"mod" : "Vanilla",
+			"replace" : {},
+			"name" : "co10_Escape_BIS_NATO_vs_CSAT"
+		},
+		{
 			"island" : "Altis",
 			"sqm": "Altis",
 			"mod" : "Vanilla US",
@@ -1340,6 +1357,13 @@
 		{
 			"island" : "Utes",
 			"sqm": "utes",
+			"mod" : "Vanilla US",
+			"replace" : {},
+			"name" : "co10_Escape_BIS_CSAT_vs_NATO"
+		},
+		{
+			"island" : "Bukovina",
+			"sqm": "Bootcamp_ACR",
 			"mod" : "Vanilla US",
 			"replace" : {},
 			"name" : "co10_Escape_BIS_CSAT_vs_NATO"

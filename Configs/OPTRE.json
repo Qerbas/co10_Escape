@@ -140,12 +140,19 @@
 			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Woodland"
 		},
 		{
+			"island" : "Bukovina",
+			"sqm": "Bootcamp_ACR",
+			"mod" : "OPTRE Woodland",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Woodland"
+		},	
+		{
 			"island" : "Bornholm",
 			"sqm": "Bornholm",
 			"mod" : "OPTRE Woodland",
 			"replace" : {},
 			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Woodland"
-		},
+		},	
 		{
 			"island" : "Kolgujev",
 			"sqm": "Cain",
