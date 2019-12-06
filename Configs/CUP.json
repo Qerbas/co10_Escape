@@ -500,6 +500,13 @@
 			"name" : "co10_Escape_CUP_RU_vs_USMC_and_RACS"
 		},
 		{
+			"island" : "Winter Panthera",
+			"sqm": "Winthera3",
+			"mod" : "CUP-CDF Winter",
+			"replace" : {},
+			"name" : "co10_Escape_CUP_RU_vs_CDF"
+		},
+		{
 			"island" : "Lingor",
 			"sqm": "Lingor3",
 			"mod" : "CUP-US USMC",
@@ -715,6 +722,13 @@
 			"mod" : "CUP RU vs USMC-RACS",
 			"replace" : {},
 			"name" : "co10_Escape_CUP_RU_vs_USMC_and_RACS"
+		},
+		{
+			"island" : "Thirsk Winter",
+			"sqm": "ThirskW",
+			"mod" : "CUP-CDF Winter",
+			"replace" : {},
+			"name" : "co10_Escape_CUP_RU_vs_CDF"
 		},
 		{
 			"island" : "Isla Duala",
