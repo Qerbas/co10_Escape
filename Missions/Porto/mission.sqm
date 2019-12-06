@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=165;
+		nextID=166;
 	};
 	class MarkerIDProvider
 	{
@@ -16,16 +16,15 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2092.4868,130.96542,2067.1279};
-		dir[]={0.20451978,-0.91829759,0.33906284};
-		up[]={0.47430024,0.39592198,0.78631806};
-		aside[]={0.85631269,-5.9627928e-007,-0.51651877};
+		pos[]={820.63965,67.8834,2665.4861};
+		dir[]={0.89252198,-0.31022412,-0.32737109};
+		up[]={0.29125187,0.95066202,-0.10682928};
+		aside[]={-0.34435961,4.4587068e-008,-0.93883854};
 	};
 };
 binarizationWanted=0;
 addons[]=
 {
-    {* REQUIRE *}
 	"A3_Ui_F",
 	"A3_Modules_F",
 	"A3_Characters_F"
@@ -136,11 +135,11 @@ class Mission
 		class Item0
 		{
 			dataType="Marker";
-			position[]={2740.3936,5.0293379,2441.9487};
+			position[]={1119.7111,6.4513855,680.83655};
 			name="drn_russianSearchChopperStartPosMarker";
 			type="Empty";
 			id=0;
-			atlOffset=-0.00066232681;
+			atlOffset=1.7859349;
 		};
 		class Item1
 		{
@@ -155,29 +154,27 @@ class Mission
 		class Item2
 		{
 			dataType="Marker";
-			position[]={3285.8643,12.983831,2767.8044};
+			position[]={1209.1462,4.4211812,651.38519};
 			name="drn_insurgentAirfieldMarker";
 			type="Empty";
 			id=2;
-			atlOffset=0.0007390976;
 		};
 		class Item3
 		{
 			dataType="Marker";
-			position[]={3286.3069,12.964105,2788.7239};
+			position[]={1278.1544,5.0990486,633.59149};
 			name="drn_searchChopperStartPosMarker";
 			type="Empty";
 			id=3;
-			atlOffset=-4.5776367e-005;
 		};
 		class Item4
 		{
 			dataType="Marker";
-			position[]={2741.0317,5.0293379,2419.4573};
+			position[]={1401.9669,6.7959452,634.34448};
 			name="drn_dropChopperStartPosMarker";
 			type="Empty";
 			id=4;
-			atlOffset=-0.00066232681;
+			atlOffset=4.1850352;
 		};
 		class Item5
 		{
@@ -231,7 +228,7 @@ class Mission
 			position[]={4625.9722,-0.0040000002,1642.256};
 			name="A3E_ExtractionSpawnPos5";
 			type="Empty";
-			angle=135.45999;
+			angle=135.45995;
 			id=13;
 			atlOffset=35.300823;
 		};
@@ -358,7 +355,7 @@ class Mission
 		class Item23
 		{
 			dataType="Marker";
-			position[]={1290.4019,6.1467619,622.87842};
+			position[]={1291.1315,6.316741,620.58563};
 			name="Boot_Hill";
 			type="Empty";
 			id=35;
@@ -630,12 +627,12 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						type="{* PLAYERUNIT_8 *}";
+						init="{* PLAYER_INIT *}";
 						name="p8";
 						isPlayable=1;
 					};
 					id=54;
-					type="O_Soldier_A_F";
+					type="{* PLAYERUNIT_8 *}";
 				};
 				class Item8
 				{
