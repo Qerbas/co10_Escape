@@ -229,6 +229,7 @@ private _UseMotorPools = Param_MotorPools;
 
 
 // Run initialization for scripts that need the players to be gathered at the start position
+[] spawn A3E_fnc_initVillages;							  
 [_enemyMinSkill, _enemyMaxSkill, _enemySpawnDistance, _enemyFrequency, _villagePatrolSpawnArea] spawn {
 	params ["_enemyMinSkill", "_enemyMaxSkill", "_enemySpawnDistance", "_enemyFrequency", "_villagePatrolSpawnArea"];
 
@@ -237,7 +238,7 @@ private _UseMotorPools = Param_MotorPools;
     
     
     _playerGroup = [] call A3E_fnc_GetPlayerGroup;
-    
+    /*
         switch (_enemyFrequency) do
         {
             case 1: // 1-2 players
@@ -262,9 +263,9 @@ private _UseMotorPools = Param_MotorPools;
                 _x call drn_fnc_Escape_OnSpawnGeneralSoldierUnit;
             } foreach units _this;
         };
-        
+       
        [_playerGroup, "drn_villageMarker", A3E_VAR_Side_Opfor, "INS", 5, _minEnemiesPerGroup, _maxEnemiesPerGroup, _enemyMinSkill, _enemyMaxSkill, _enemySpawnDistance, _villagePatrolSpawnArea, A3E_Debug] call drn_fnc_InitVillagePatrols;
-
+*/ 
         switch (_enemyFrequency) do
         {
             case 1: // 1-2 players
