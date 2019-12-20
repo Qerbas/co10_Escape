@@ -95,6 +95,15 @@ class CfgFunctions
 			class MissionFlow {};
 			class createStartpos {};
 		};
+		class Spawning
+		{
+			class initPatrolZone {};
+			class initVillages {};
+			class activatePatrolZone {};
+			class deactivatePatrolZone {};
+			class onEnemySoldierSpawn {};
+			class spawnPatrol {};
+		};
 		class Templates
 		{
             class BuildPrison {};
