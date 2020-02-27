@@ -11,9 +11,9 @@ _enemyFrequency = _this select 0;
 
 //Sides
 
-A3E_VAR_Side_Blufor = east;//Player side CUP SLA
+A3E_VAR_Side_Blufor = east;//Player side CUP RU MSV - EMR
 A3E_VAR_Side_Opfor = west;//Enemy side CUP USMC woodland
-A3E_VAR_Side_Ind = resistance;//Independent side CUP RACS
+A3E_VAR_Side_Ind = resistance;//Independent side CUP RACS woodland
 
 A3E_VAR_Flag_Opfor = "\A3\Data_F\Flags\Flag_us_CO.paa";
 A3E_VAR_Flag_Ind = "\A3\Data_F\Flags\Flag_green_CO.paa";
