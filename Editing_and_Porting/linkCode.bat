@@ -22,7 +22,7 @@ mklink  "%target%\config.sqf" "%source%\Code\config.sqf"
 mklink  "%target%\description.ext" "%source%\Code\description.ext"
 mklink  "%target%\escape_banner.paa" "%source%\Code\escape_banner.paa"
 mklink  "%target%\icon_noplayer_ca.paa" "%source%\Code\icon_noplayer_ca.paa"
-mklink  "%target%\EscapeLeaflet_USA_co.paa" "%source%\Code\EscapeLeaflet_USA_co.paa"
+mklink  "%target%\EscapeLeaflet_USA_co.paa" "%source%\Code\leaflet.paa"
 mklink  "%target%\cba_settings.sqf" "%source%\Code\cba_settings.sqf"
 mklink  "%target%\StringTable.xml" "%source%\Code\StringTable.xml"
 
