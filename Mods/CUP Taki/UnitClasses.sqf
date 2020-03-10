@@ -468,6 +468,8 @@ switch (_enemyFrequency) do {
 		,"CUP_I_Hilux_armored_M2_TK"
 		,"CUP_I_Hilux_armored_metis_TK"
 		,"CUP_I_Hilux_armored_SPG9_TK"
+		,"CUP_I_Hilux_BMP1_TK"
+		,"CUP_I_Hilux_btr60_TK"
 		//MRAPs  1 set
 		,"CUP_I_BRDM2_TK_Gue" 
 		,"CUP_I_BRDM2_ATGM_TK_Gue"
@@ -479,7 +481,8 @@ switch (_enemyFrequency) do {
 		,"CUP_I_Hilux_igla_TK"
 		,"CUP_I_Hilux_armored_igla_TK"
 		,"CUP_I_Hilux_zu23_TK"
-	    ,"CUP_I_Hilux_armored_zu23_TK" 
+	    ,"CUP_I_Hilux_armored_zu23_TK"
+        ,"CUP_I_Datsun_AA_TK_Random"		
 		//Heavily Armed APCs  1 set
 		,"CUP_I_BMP1_TK_GUE"
         ,"CUP_I_BMP1_TK_GUE"
@@ -675,11 +678,15 @@ switch (_enemyFrequency) do {
 		,"CUP_I_Hilux_armored_M2_TK"
 		,"CUP_I_Hilux_armored_metis_TK"
 		,"CUP_I_Hilux_armored_SPG9_TK"
+		,"CUP_I_Hilux_BMP1_TK"
+		,"CUP_I_Hilux_btr60_TK"
 		,"CUP_I_Hilux_armored_AGS30_TK"  //2
 		,"CUP_I_Hilux_armored_DSHKM_TK"
 		,"CUP_I_Hilux_armored_M2_TK"
 		,"CUP_I_Hilux_armored_metis_TK"
 		,"CUP_I_Hilux_armored_SPG9_TK"
+		,"CUP_I_Hilux_BMP1_TK"
+		,"CUP_I_Hilux_btr60_TK"
 		//MRAPs  2 sets
 		,"CUP_I_BRDM2_TK_Gue"  //1
 		,"CUP_I_BRDM2_ATGM_TK_Gue"
@@ -697,11 +704,13 @@ switch (_enemyFrequency) do {
 		,"CUP_I_Hilux_armored_igla_TK"
 		,"CUP_I_Hilux_zu23_TK"
 	    ,"CUP_I_Hilux_armored_zu23_TK" 
+		,"CUP_I_Datsun_AA_TK_Random"
 		,"CUP_I_Ural_ZU23_TK_Gue"  //2
 		,"CUP_I_Hilux_igla_TK"
 		,"CUP_I_Hilux_armored_igla_TK"
 		,"CUP_I_Hilux_zu23_TK"
-	    ,"CUP_I_Hilux_armored_zu23_TK" 
+	    ,"CUP_I_Hilux_armored_zu23_TK"
+		,"CUP_I_Datsun_AA_TK_Random"
 		//Heavily Armed APCs  1 set
 		,"CUP_I_BMP1_TK_GUE"
         ,"CUP_I_BMP1_TK_GUE"
@@ -908,11 +917,15 @@ switch (_enemyFrequency) do {
 		,"CUP_I_Hilux_armored_M2_TK"
 		,"CUP_I_Hilux_armored_metis_TK"
 		,"CUP_I_Hilux_armored_SPG9_TK"
+		,"CUP_I_Hilux_BMP1_TK"
+		,"CUP_I_Hilux_btr60_TK"
 		,"CUP_I_Hilux_armored_AGS30_TK"  //2
 		,"CUP_I_Hilux_armored_DSHKM_TK"
 		,"CUP_I_Hilux_armored_M2_TK"
 		,"CUP_I_Hilux_armored_metis_TK"
 		,"CUP_I_Hilux_armored_SPG9_TK"
+		,"CUP_I_Hilux_BMP1_TK"
+		,"CUP_I_Hilux_btr60_TK"
 		//MRAPs  2 sets
 		,"CUP_I_BRDM2_TK_Gue"  //1
 		,"CUP_I_BRDM2_ATGM_TK_Gue"
@@ -929,12 +942,14 @@ switch (_enemyFrequency) do {
 		,"CUP_I_Hilux_igla_TK"
 		,"CUP_I_Hilux_armored_igla_TK"
 		,"CUP_I_Hilux_zu23_TK"
-	    ,"CUP_I_Hilux_armored_zu23_TK" 
+		,"CUP_I_Hilux_armored_zu23_TK" 
+		,"CUP_I_Datsun_AA_TK_Random"
 		,"CUP_I_Ural_ZU23_TK_Gue"  //2
 		,"CUP_I_Hilux_igla_TK"
 		,"CUP_I_Hilux_armored_igla_TK"
 		,"CUP_I_Hilux_zu23_TK"
 	    ,"CUP_I_Hilux_armored_zu23_TK" 
+		,"CUP_I_Datsun_AA_TK_Random"
 		//Heavily Armed APCs  2 sets
 		,"CUP_I_BMP1_TK_GUE"  //1
         ,"CUP_I_BMP1_TK_GUE"
@@ -1051,24 +1066,34 @@ a3e_arr_recon_I_InfantryTypes = [
 // Random array. A roadblock has a manned vehicle. This array contains possible manned vehicles (can be of any kind, like cars, armored and statics).
 a3e_arr_Escape_RoadBlock_MannedVehicleTypes = [
 	"CUP_O_LR_MG_TKA"
-	,"CUP_O_SPG9_TKA"
 	,"CUP_O_UAZ_MG_TKA"
 	,"CUP_O_UAZ_AGS30_TKA"
 	,"CUP_O_UAZ_MG_TKA"
 	,"CUP_O_UAZ_METIS_TKA"
 	,"CUP_O_UAZ_SPG9_TKA"
 	,"CUP_O_BTR60_TK"
+	,"CUP_O_BTR80_TK"
+	,"CUP_O_BTR80A_TK"
 	,"CUP_O_BRDM2_TKA"
 	,"CUP_O_BRDM2_ATGM_TKA"
-	,"CUP_O_M113_TKA"
-	,"CUP_O_ZU23_TK"];
+	,"CUP_O_M113_TKA"];
 a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind = [
-	"CUP_I_Datsun_PK_TK_Random"
-	,"CUP_I_Datsun_PK_TK_Random"
-	,"CUP_I_BTR40_MG_TKG"
+    "CUP_I_Hilux_AGS30_TK"
+	,"CUP_I_Hilux_DSHKM_TK"
+	,"CUP_I_Hilux_M2_TK"
+	,"CUP_I_Hilux_metis_TK"
+	,"CUP_I_Hilux_SPG9_TK"
+	,"CUP_I_Hilux_zu23_TK"
+	,"CUP_I_Hilux_armored_AGS30_TK"
+	,"CUP_I_Hilux_armored_DSHKM_TK"
+	,"CUP_I_Hilux_armored_M2_TK"
+	,"CUP_I_Hilux_armored_metis_TK"
+	,"CUP_I_Hilux_armored_SPG9_TK"
+	,"CUP_I_Hilux_armored_zu23_TK"
+    ,"CUP_I_Hilux_armored_BMP1_TK"
+    ,"CUP_I_Hilux_armored_btr60_TK"	
 	,"CUP_I_BRDM2_TK_Gue"
-	,"CUP_I_BRDM2_ATGM_TK_Gue"
-	,"CUP_I_ZU23_TK_GUE"];
+	,"CUP_I_BRDM2_ATGM_TK_Gue"];
 
 // Random array. Vehicle classes (preferrably trucks) transporting enemy reinforcements.
 a3e_arr_Escape_ReinforcementTruck_vehicleClasses = [
@@ -1106,6 +1131,8 @@ a3e_arr_ComCenDefence_lightArmorClasses = [
 	,"CUP_O_BRDM2_TKA"
 	,"CUP_O_BRDM2_ATGM_TKA"
 	,"CUP_O_BTR60_TK"
+	,"CUP_O_BTR80_TK"
+	,"CUP_O_BTR80A_TK"
 	,"CUP_O_BMP2_ZU_TKA"];
 // Random array. Heavy armored vehicles guarding the communication centers.
 a3e_arr_ComCenDefence_heavyArmorClasses = [
@@ -1118,7 +1145,9 @@ a3e_arr_ComCenStaticWeapons = [
 	"CUP_O_KORD_high_TK"];
 // A communication center have two parked and empty vehicles of the following possible types.
 a3e_arr_ComCenParkedVehicles = [
-    "CUP_O_Ural_ZU23_TKA"
+    "CUP_O_LR_AA_TKA"
+	,"CUP_O_UAZ_AA_TKA"
+	,"CUP_O_Ural_ZU23_TKA"
     ,"CUP_O_LR_Ambulance_TKA"
     ,"CUP_O_LR_MG_TKA"
 	,"CUP_O_LR_SPG9_TKA"
@@ -1139,8 +1168,7 @@ a3e_arr_ComCenParkedVehicles = [
 	,"CUP_O_Ural_Reammo_TKA"
 	,"CUP_O_Ural_Open_TKA"
 	,"CUP_O_Ural_Refuel_TKA"
-	,"CUP_O_Ural_Repair_TKA"
-	,"CUP_O_Ural_ZU23_TKA"];
+	,"CUP_O_Ural_Repair_TKA"];
 
 // Random array. Enemies sometimes use civilian vehicles in their unconventional search for players. The following car types may be used.
 a3e_arr_Escape_EnemyCivilianCarTypes = [
@@ -1358,30 +1386,8 @@ a3e_arr_Escape_AmmoDepot_StaticWeaponClasses = [
 	,"CUP_O_KORD_high_TK"
 	,"CUP_O_Igla_AA_pod_TK"];
 // An ammo depot have one parked and empty vehicle of the following possible types.
-a3e_arr_Escape_AmmoDepot_ParkedVehicleClasses = [
-    "CUP_O_Ural_ZU23_TKA"
-    ,"CUP_O_LR_Ambulance_TKA"
-    ,"CUP_O_LR_MG_TKA"
-	,"CUP_O_LR_SPG9_TKA"
-	,"CUP_O_LR_Transport_TKA"
-	,"CUP_O_UAZ_Unarmed_TKA"
-	,"CUP_O_V3S_Open_TKA"
-	,"CUP_O_V3S_Covered_TKA"
-	,"CUP_O_V3S_Rearm_TKA"
-	,"CUP_O_V3S_Refuel_TKA"
-	,"CUP_O_V3S_Repair_TKA"
-	,"CUP_O_UAZ_Unarmed_TKA"
-	,"CUP_O_UAZ_AGS30_TKA"
-	,"CUP_O_UAZ_MG_TKA"
-	,"CUP_O_UAZ_METIS_TKA"
-	,"CUP_O_UAZ_Open_TKA"
-	,"CUP_O_UAZ_SPG9_TKA"
-	,"CUP_O_Ural_TKA"
-	,"CUP_O_Ural_Reammo_TKA"
-	,"CUP_O_Ural_Open_TKA"
-	,"CUP_O_Ural_Refuel_TKA"
-	,"CUP_O_Ural_Repair_TKA"
-	,"CUP_O_Ural_ZU23_TKA"];
+a3e_arr_Escape_AmmoDepot_ParkedVehicleClasses = a3e_arr_ComCenParkedVehicles;
+
 
 //Random array. Types of helicopters to spawn
 a3e_arr_O_attack_heli = [
