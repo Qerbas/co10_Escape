@@ -604,7 +604,7 @@ if (count _parkedVehicleClasses > 0) then {
 };
 
 _random = random 1;
-if (_random < .3 ) then {
+if (_random > .5 ) then {
     _pos = [-20.35, -1.202];
     _dir = 100;
     
@@ -614,7 +614,7 @@ if (_random < .3 ) then {
 	_stupidvehicle setfuel random 1;
 	_stupidvehicle setdamage random [0, 0.2, 0.5];
 };
-if (_random > .9) then {
+if (_random > .75) then {
     _pos = [-15.247, 12.6];
     _dir = 144;
    
