@@ -156,7 +156,6 @@ class CfgFunctions
 			class InitVillageMarkers{};
 			class PopulateVillage {};
 			class DepopulateVillage {};
-			class InitVillagePatrols {};
 			class InitAquaticPatrols {};
 			class PopulateAquaticPatrol {};
 			class DepopulateAquaticPatrol {};
