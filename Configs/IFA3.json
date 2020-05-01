@@ -644,6 +644,27 @@
 			"name" : "co10_Escape_IFA3_GER_vs_SOV"
 		},
 		{
+			"island" : "Vidda",
+			"sqm": "blud_vidda",
+			"mod" : "IFA3",
+			"replace" : {},
+			"name" : "co10_Escape_IFA3_GER_vs_SOV"
+		},
+		{
+			"island" : "MSKE",
+			"sqm": "mske",
+			"mod" : "IFA3",
+			"replace" : {},
+			"name" : "co10_Escape_IFA3_GER_vs_SOV"
+		},
+		{
+			"island" : "Napf Island",
+			"sqm": "napf",
+			"mod" : "IFA3",
+			"replace" : {},
+			"name" : "co10_Escape_IFA3_GER_vs_SOV"
+		},
+		{
 			"island" : "Dingor",
 			"sqm": "Dingor",
 			"mod" : "IFA3 d",
