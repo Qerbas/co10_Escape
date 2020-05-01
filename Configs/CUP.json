@@ -1564,6 +1564,13 @@
 			"name" : "co10_Escape_CUP_RU_vs_BAF"
 		},
 		{
+			"island" : "Vidda",
+			"sqm": "blud_vidda",
+			"mod" : "CUP-CDF Winter",
+			"replace" : {},
+			"name" : "co10_Escape_CUP_RU_vs_CDF"
+		},
+		{
 			"island" : "MSKE",
 			"sqm": "mske",
 			"mod" : "CUP RU",

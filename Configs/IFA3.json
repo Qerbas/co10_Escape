@@ -733,7 +733,14 @@
 			"mod" : "IFA3 w",
 			"replace" : {},
 			"name" : "co10_Escape_IFA3_SOV_vs_GER"
-		}
+		},
+		{
+			"island" : "Vidda",
+			"sqm": "blud_vidda",
+			"mod" : "IFA3 w",
+			"replace" : {},
+			"name" : "co10_Escape_IFA3_SOV_vs_GER"
+		},
 	],
 	"Addons" : []
 	
