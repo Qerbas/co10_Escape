@@ -37,7 +37,7 @@
 					"PLAYERUNIT_5" : "B_Soldier_GL_F",
 					"PLAYERUNIT_6" : "B_soldier_AR_F",
 					"PLAYERUNIT_7" : "B_soldier_LAT_F",
-					"PLAYERUNIT_8" : "B_Soldier_F",
+					"PLAYERUNIT_8" : "B_soldier_UAV_F",
 					"PLAYERUNIT_9" : "B_soldier_M_F",
 					"PLAYERUNIT_10" : "B_medic_F"
 				}
@@ -57,7 +57,7 @@
 					"PLAYERUNIT_5" : "O_Soldier_GL_F",
 					"PLAYERUNIT_6" : "O_Soldier_AR_F",
 					"PLAYERUNIT_7" : "O_Soldier_LAT_F",
-					"PLAYERUNIT_8" : "O_Soldier_F",
+					"PLAYERUNIT_8" : "O_soldier_UAV_F",
 					"PLAYERUNIT_9" : "O_soldier_M_F",
 					"PLAYERUNIT_10" : "O_medic_F"
 				}
@@ -77,7 +77,7 @@
 					"PLAYERUNIT_5" : "B_T_Soldier_GL_F",
 					"PLAYERUNIT_6" : "B_T_soldier_AR_F",
 					"PLAYERUNIT_7" : "B_T_soldier_LAT_F",
-					"PLAYERUNIT_8" : "B_T_Soldier_F",
+					"PLAYERUNIT_8" : "B_T_soldier_UAV_F",
 					"PLAYERUNIT_9" : "B_T_soldier_M_F",
 					"PLAYERUNIT_10" : "B_T_medic_F"
 				}
@@ -97,11 +97,31 @@
 					"PLAYERUNIT_5" : "O_T_Soldier_GL_F",
 					"PLAYERUNIT_6" : "O_T_Soldier_AR_F",
 					"PLAYERUNIT_7" : "O_T_Soldier_LAT_F",
-					"PLAYERUNIT_8" : "O_T_Soldier_F",
+					"PLAYERUNIT_8" : "O_T_Soldier_UAV_F",
 					"PLAYERUNIT_9" : "O_T_Soldier_M_F",
 					"PLAYERUNIT_10" : "O_T_Medic_F"
 				}
-		}
+		},
+		{
+            "name" : "Vanilla Contact US",
+            "path" : "./Mods/Vanilla Contact US/",
+            "require" : [],
+            "replace" :
+                {
+                    "MOD" : "Contact CSAT vs NATO",
+                    "PLAYERSIDE" : "EAST",
+                    "PLAYERUNIT_1" : "O_R_Soldier_TL_F",
+                    "PLAYERUNIT_2" : "O_R_Soldier_AR_F",
+                    "PLAYERUNIT_3" : "O_T_Soldier_UAV_F",
+                    "PLAYERUNIT_4" : "O_R_Patrol_Soldier_Engineer_F",
+                    "PLAYERUNIT_5" : "O_R_Soldier_GL_F",
+                    "PLAYERUNIT_6" : "O_R_JTAC_F",
+                    "PLAYERUNIT_7" : "O_R_Soldier_LAT_F",
+                    "PLAYERUNIT_8" : "O_R_soldier_exp_F",
+                    "PLAYERUNIT_9" : "O_R_soldier_M_F",
+                    "PLAYERUNIT_10" : "O_R_medic_F"
+                }
+        }
 	],
 	"Islands": [
 		{
@@ -174,6 +194,26 @@
 				"ISLANDNAME" : "Livonia"
 				}
 		},
+        {
+			"name" : "Weferlingen",
+			"class" : "gm_weferlingen_summer",
+			"path" : "./Islands/Weferlingen/",
+			"replace" :
+				{
+				"ISLAND" : "gm_weferlingen_summer",
+				"ISLANDNAME" : "Weferlingen"
+				}
+		},
+        {
+			"name" : "WeferlingenWinter",
+			"class" : "gm_weferlingen_winter",
+			"path" : "./Islands/WeferlingenW/",
+			"replace" :
+				{
+				"ISLAND" : "gm_weferlingen_winter",
+				"ISLANDNAME" : "Weferlingen"
+				}
+		},
 		{
 			"name" : "Chernarus_Summer",
 			"class" : "Chernarus_Summer",
@@ -191,6 +231,16 @@
 			"replace" :
 				{
 				"ISLAND" : "Chernarus_Winter",
+				"ISLANDNAME" : "Chernarus"
+				}
+		},
+        {
+			"name" : "Chernarus_2020",
+			"class" : "CUP_Chernarus_A3",
+			"path" : "./Islands/Chernarus_2020/",
+			"replace" :
+				{
+				"ISLAND" : "Chernarus_2020",
 				"ISLANDNAME" : "Chernarus"
 				}
 		},
@@ -722,6 +772,27 @@
 			"replace" : {},
 			"name" : "co10_Escape_BIS_NATO_vs_CSAT"
 		},
+        {
+			"island" : "Livonia",
+			"sqm" : "Enoch",
+			"mod" : "Vanilla",
+			"replace" : {},
+			"name" : "co10_Escape_BIS_NATO_vs_CSAT"
+		},
+        {
+			"island" : "Weferlingen",
+			"sqm" : "Weferlingen",
+			"mod" : "Vanilla",
+			"replace" : {},
+			"name" : "co10_Escape_BIS_NATO_vs_CSAT"
+		},
+        {
+			"island" : "WeferlingenWinter",
+			"sqm" : "WeferlingenW",
+			"mod" : "Vanilla",
+			"replace" : {},
+			"name" : "co10_Escape_BIS_NATO_vs_CSAT"
+		},
 		{
 			"island" : "Bornholm",
 			"sqm": "Bornholm",
@@ -743,9 +814,16 @@
 			"replace" : {},
 			"name" : "co10_Escape_BIS_NATO_vs_CSAT"
 		},
-		{
-			"island" : "Livonia",
-			"sqm" : "Enoch",
+        {
+			"island" : "Chernarus_Winter",
+			"sqm": "Chernarus_Winter",
+			"mod" : "Vanilla",
+			"replace" : {},
+			"name" : "co10_Escape_BIS_NATO_vs_CSAT"
+		},
+        {
+			"island" : "Chernarus_2020",
+			"sqm": "Chernarus_2020",
 			"mod" : "Vanilla",
 			"replace" : {},
 			"name" : "co10_Escape_BIS_NATO_vs_CSAT"
@@ -1142,12 +1220,54 @@
 			"replace" : {},
 			"name" : "co10_Escape_BIS_CSAT_vs_NATO"
 		},
+        {
+			"island" : "Livonia",
+			"sqm" : "Enoch",
+			"mod" : "Vanilla US",
+			"replace" : {},
+			"name" : "co10_Escape_BIS_CSAT_vs_NATO"
+		},
+        {
+			"island" : "Livonia",
+			"sqm" : "Enoch",
+			"mod" : "Vanilla Contact US",
+			"replace" : {},
+			"name" : "co10_Escape_Contact_CSAT_vs_NATO"
+		},
+        {
+			"island" : "Weferlingen",
+			"sqm" : "Weferlingen",
+			"mod" : "Vanilla US",
+			"replace" : {},
+			"name" : "co10_Escape_BIS_CSAT_vs_NATO"
+		},
+        {
+			"island" : "Weferlingen",
+			"sqm" : "Weferlingen",
+			"mod" : "Vanilla Contact US",
+			"replace" : {},
+			"name" : "co10_Escape_Contact_CSAT_vs_NATO"
+		},
+        {
+			"island" : "WeferlingenWinter",
+			"sqm" : "WeferlingenW",
+			"mod" : "Vanilla US",
+			"replace" : {},
+			"name" : "co10_Escape_BIS_CSAT_vs_NATO"
+		},
 		{
 			"island" : "Bornholm",
 			"sqm": "Bornholm",
 			"mod" : "Vanilla US",
 			"replace" : {},
 			"name" : "co10_Escape_BIS_CSAT_vs_NATO"
+		},
+        {
+			"island" : "Bornholm",
+			"sqm": "Bornholm",
+			"mod" : "Vanilla Contact US",
+			"replace" : {},
+			"name" : "co10_Escape_Contact_CSAT_vs_NATO"
 		},
 		{
 			"island" : "Chernarus",
@@ -1156,12 +1276,12 @@
 			"replace" : {},
 			"name" : "co10_Escape_BIS_CSAT_vs_NATO"
 		},
-		{
-			"island" : "Livonia",
-			"sqm" : "Enoch",
-			"mod" : "Vanilla US",
+        {
+			"island" : "Chernarus",
+			"sqm" : "Chernarus",
+			"mod" : "Vanilla Contact US",
 			"replace" : {},
-			"name" : "co10_Escape_BIS_CSAT_vs_NATO"
+			"name" : "co10_Escape_Contact_CSAT_vs_NATO"
 		},
 		{
 			"island" : "Chernarus_Summer",
@@ -1170,12 +1290,54 @@
 			"replace" : {},
 			"name" : "co10_Escape_BIS_CSAT_vs_NATO"
 		},
+        {
+			"island" : "Chernarus_Summer",
+			"sqm": "Chernarus_Summer",
+			"mod" : "Vanilla Contact US",
+			"replace" : {},
+			"name" : "co10_Escape_Contact_CSAT_vs_NATO"
+		},
+        {
+			"island" : "Chernarus_Winter",
+			"sqm": "Chernarus_Winter",
+			"mod" : "Vanilla US",
+			"replace" : {},
+			"name" : "co10_Escape_BIS_CSAT_vs_NATO"
+		},
+        {
+			"island" : "Chernarus_Winter",
+			"sqm": "Chernarus_Winter",
+			"mod" : "Vanilla Contact US",
+			"replace" : {},
+			"name" : "co10_Escape_Contact_CSAT_vs_NATO"
+		},
+        {
+			"island" : "Chernarus_2020",
+			"sqm": "Chernarus_2020",
+			"mod" : "Vanilla US",
+			"replace" : {},
+			"name" : "co10_Escape_BIS_CSAT_vs_NATO"
+		},
+        {
+			"island" : "Chernarus_2020",
+			"sqm": "Chernarus_2020",
+			"mod" : "Vanilla Contact US",
+			"replace" : {},
+			"name" : "co10_Escape_Contact_CSAT_vs_NATO"
+		},
 		{
 			"island" : "Podagorsk",
 			"sqm": "FDF_Isle1_a",
 			"mod" : "Vanilla US",
 			"replace" : {},
 			"name" : "co10_Escape_BIS_CSAT_vs_NATO"
+		},
+        {
+			"island" : "Podagorsk",
+			"sqm": "FDF_Isle1_a",
+			"mod" : "Vanilla Contact US",
+			"replace" : {},
+			"name" : "co10_Escape_Contact_CSAT_vs_NATO"
 		},
 		{
 			"island" : "Panthera",
@@ -1204,6 +1366,13 @@
 			"mod" : "Vanilla US",
 			"replace" : {},
 			"name" : "co10_Escape_BIS_CSAT_vs_NATO"
+		},
+        {
+			"island" : "Lingor",
+			"sqm": "Lingor3",
+			"mod" : "Vanilla Apex US",
+			"replace" : {},
+			"name" : "co10_Escape_APEX_CSAT_vs_NATO"
 		},
 		{
 			"island" : "Dingor",
@@ -1373,12 +1542,26 @@
 			"replace" : {},
 			"name" : "co10_Escape_BIS_CSAT_vs_NATO"
 		},
-		{
+        {
+			"island" : "Schwemlitz",
+			"sqm": "Schwemlitz",
+			"mod" : "Vanilla Contact US",
+			"replace" : {},
+			"name" : "co10_Escape_Contact_CSAT_vs_NATO"
+		},
+        {
 			"island" : "Rosche",
 			"sqm": "Rosche",
 			"mod" : "Vanilla US",
 			"replace" : {},
 			"name" : "co10_Escape_BIS_CSAT_vs_NATO"
+		},
+        {
+			"island" : "Rosche",
+			"sqm": "Rosche",
+			"mod" : "Vanilla Contact US",
+			"replace" : {},
+			"name" : "co10_Escape_Contact_CSAT_vs_NATO"
 		},
 		{
 			"island" : "Diyala",
@@ -1414,6 +1597,13 @@
 			"mod" : "Vanilla US",
 			"replace" : {},
 			"name" : "co10_Escape_BIS_CSAT_vs_NATO"
+		},
+        {
+			"island" : "Ruha",
+			"sqm": "Ruha",
+			"mod" : "Vanilla Contact US",
+			"replace" : {},
+			"name" : "co10_Escape_Contact_CSAT_vs_NATO"
 		},
 		{
 			"island" : "Prei Khmaoch Luong",
@@ -1522,6 +1712,11 @@
 		{
 			"name" : "Apex",
 			"mods" : ["Vanilla Apex","Vanilla Apex US"]
+		}
+		,
+		{
+			"name" : "Contact",
+			"mods" : ["Vanilla Contact US"]
 		}
 	]
 	
