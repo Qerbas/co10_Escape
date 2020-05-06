@@ -52,6 +52,8 @@ _enemySpawnDistance = (Param_EnemySpawnDistance);
 
 [_enemyFrequency] call compile preprocessFileLineNumbers "Units\UnitClasses.sqf";
 
+// prison is created locally, clients need flag texture path
+publicVariable "A3E_VAR_Flag_Ind";
 
 // Developer Variables
 
@@ -581,13 +583,21 @@ waitUntil {scriptDone _scriptHandle};
 				removeAllPrimaryWeaponItems _unit;
 				
 			};
-			private["_hmd"];
-			_hmd = hmd _unit;
-            if ((random 100 > 20) || (Param_NoNightvision==1)) then {
-				if(_hmd != "") then {
-					_unit unlinkItem _hmd;
-				};
-            };
+
+			private _hmd = hmd _unit;
+			if (_hmd isEqualTo "") then {
+				private _cfgWeapons = configFile >> "CfgWeapons";
+				{
+					if (616 == getNumber (_cfgWeapons >> _x >> "ItemInfo" >> "type")) exitWith {
+						_hmd = _x;
+					};
+				} forEach items _unit;
+			};
+			if (!(_hmd isEqualTo "") && {random 100 > 20 || {Param_NoNightvision == 1}}) then {
+				_unit unlinkItem _hmd;
+				_unit removeItem _hmd;
+			};
+			
 			private["_nighttime"];
 			if(daytime > 19 OR daytime < 8) then {
 		        _nighttime = true;
