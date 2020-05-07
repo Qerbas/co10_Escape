@@ -88,6 +88,7 @@ class CfgFunctions
 			class runExtraction {};
 			class runExtractionBoat {};
 			class firedNearExtraction {};
+			class weather {};
 			class FindSpawnRoad {};
 			class EndMissionServer {};
 			class SelectExtractionZone {};
