@@ -643,7 +643,7 @@
 		},
 		{
 			"name" : "Kujari",
-			"class" : "Kujari",
+			"class" : "tem_kujari",
 			"path" : "./Islands/Kujari/",
 			"replace" :
 				{
