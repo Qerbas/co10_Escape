@@ -78,7 +78,7 @@ for mission in missions:
                     f.flush()
                     f.close()
     subprocess.call(["cpbo.exe", "-y", "-p", missiondir])
-    shutil.copyfile(missiondir + ".pbo", './Packed/Missions/'+mission['name']+'.'+ missionIsland['class']+'.pbo') #Copy build artifact
+    #shutil.copyfile(missiondir + ".pbo", './Packed/Missions/'+mission['name']+'.'+ missionIsland['class']+'.pbo') #Copy build artifact
 t = []
 for m in missions:
     t.append(m['name'].lower())
@@ -105,7 +105,7 @@ for s in addonFolders:
             addonMissionFolder = mission['name']+'\\'+mission['name']+str(missionNumber)+'.'+ missionIsland['class'] 
             if os.path.exists(data['BuildDir'] + '/addons/' +mission['name']+'/'+mission['name']+str(missionNumber)+'.'+ missionIsland['class']):
                 shutil.rmtree(data['BuildDir'] + '/addons/' +mission['name']+'/'+mission['name']+str(missionNumber)+'.'+ missionIsland['class'])
-            shutil.copytree(data['BuildDir'] + '/missionfiles/' + missiondir,data['BuildDir'] + '/addons/' +mission['name']+'/'+mission['name']+str(missionNumber)+'.'+ missionIsland['class'])
+            #shutil.copytree(data['BuildDir'] + '/missionfiles/' + missiondir,data['BuildDir'] + '/addons/' +mission['name']+'/'+mission['name']+str(missionNumber)+'.'+ missionIsland['class'])
             ds=open(data['BuildDir'] + '/addons/' +mission['name']+'/'+mission['name']+str(missionNumber)+'.'+ missionIsland['class']+'/include/defines.hpp').read()
             ds=ds.replace('#define RELEASE "Mission"', '#define RELEASE "Addon"')
             f=open(data['BuildDir'] + '/addons/' +mission['name']+'/'+mission['name']+str(missionNumber)+'.'+ missionIsland['class']+'/include/defines.hpp', 'w')
