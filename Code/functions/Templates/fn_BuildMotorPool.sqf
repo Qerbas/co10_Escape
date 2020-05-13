@@ -584,7 +584,7 @@ if (count _parkedArmorClasses > 0) then {
 	
 	_sarmor setfuel random [0.05, 0.10, 0.15];
 	_sarmor setdamage random [0.25, 0.5, 0.9];
-	
+	_sarmor setVehicleAmmo random [0, 0.5, 1];
 
 };
 // setVehicleAmmo cannot be used until Ammo Depots rearm all vehicles
@@ -601,6 +601,7 @@ if (count _parkedVehicleClasses > 0) then {
 	
 	_stupidvehicle setfuel random 1;
 	_stupidvehicle setdamage random [0, 0.2, 0.5];
+	_stupidvehicle setVehicleAmmo random [0, 0.5, 1];
 };
 
 _random = random 1;
@@ -613,6 +614,7 @@ if (_random > .5 ) then {
 	
 	_stupidvehicle setfuel random 1;
 	_stupidvehicle setdamage random [0, 0.2, 0.5];
+	_stupidvehicle setVehicleAmmo random [0, 0.5, 1];
 };
 if (_random > .75) then {
     _pos = [-15.247, 12.6];
@@ -623,6 +625,7 @@ if (_random > .75) then {
 	
 	_stupidvehicle setfuel random 1;
 	_stupidvehicle setdamage random [0, 0.2, 0.5];
+	_stupidvehicle setVehicleAmmo random [0, 0.5, 1];
 };
 
 ["A3E_MotorPoolMapMarker" + str _mNumber,_centerPos,"o_service"] call A3E_fnc_createLocationMarker;
