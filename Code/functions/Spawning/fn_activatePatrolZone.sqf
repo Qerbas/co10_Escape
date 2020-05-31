@@ -28,7 +28,7 @@ if(!(_active)) then {
 				{
 					case 1: // 1-2 players
 					{
-					   _patrolsPerSqmSqrt = 0.01;
+					   _patrolsPerSqmSqrt = 0.001;
 					};
 					case 2: // 3-5 players
 					{
