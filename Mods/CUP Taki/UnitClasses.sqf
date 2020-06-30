@@ -193,9 +193,9 @@ a3e_arr_Escape_MilitaryTraffic_CivilianVehicleClasses = [
 	,"CUP_C_Lada_White_CIV"
 	,"CUP_C_Lada_White_CIV"
 	,"CUP_C_Lada_White_CIV"
-	,"CUP_Lada_TK2_CIV"
-	,"CUP_Lada_TK2_CIV"
-	,"CUP_Lada_TK2_CIV"
+	,"CUP_C_Lada_TK2_CIV"
+	,"CUP_C_Lada_TK2_CIV"
+	,"CUP_C_Lada_TK2_CIV"
 	,"CUP_C_Lada_Red_CIV"
 	,"CUP_C_Lada_Red_CIV"
 	,"CUP_C_Lada_Red_CIV"
@@ -1287,9 +1287,9 @@ a3e_arr_Escape_EnemyCivilianCarTypes = [
 	,"CUP_C_Lada_White_CIV"
 	,"CUP_C_Lada_White_CIV"
 	,"CUP_C_Lada_White_CIV"
-	,"CUP_Lada_TK2_CIV"
-	,"CUP_Lada_TK2_CIV"
-	,"CUP_Lada_TK2_CIV"
+	,"CUP_C_Lada_TK2_CIV"
+	,"CUP_C_Lada_TK2_CIV"
+	,"CUP_C_Lada_TK2_CIV"
 	,"CUP_C_Lada_Red_CIV"
 	,"CUP_C_Lada_Red_CIV"
 	,"CUP_C_Lada_Red_CIV"
@@ -1433,14 +1433,14 @@ a3e_arr_AmmoDepotBasicWeapons pushback ["CUP_arifle_AKS", 75, 2, 4, ["CUP_30Rnd_
 // Weapons and ammo in the special weapons box
 a3e_arr_AmmoDepotSpecialWeapons = [];
 // CSAT weapons
-a3e_arr_AmmoDepotBasicWeapons pushback ["CUP_arifle_RPK74", 50, 2, 4, ["CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M","CUP_40Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M"], 4];
-a3e_arr_AmmoDepotBasicWeapons pushback ["CUP_lmg_PKM", 30, 1, 2, ["CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M","CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Red_M","CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Yellow_M"], 4];
-a3e_arr_AmmoDepotBasicWeapons pushback ["CUP_SVD", 25, 1, 4, ["CUP_10Rnd_762x54_SVD_M"], 9];
+a3e_arr_AmmoDepotSpecialWeapons pushback ["CUP_arifle_RPK74", 50, 2, 4, ["CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M","CUP_40Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M"], 4];
+a3e_arr_AmmoDepotSpecialWeapons pushback ["CUP_lmg_PKM", 30, 1, 2, ["CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M","CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Red_M","CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Yellow_M"], 4];
+a3e_arr_AmmoDepotSpecialWeapons pushback ["CUP_srifle_SVD_pso", 25, 1, 4, ["CUP_10Rnd_762x54_SVD_M"], 9];
 a3e_arr_AmmoDepotSpecialWeapons pushback ["CUP_ksvk", 10, 1, 2, ["CUP_5Rnd_127x108_KSVK_M"], 9];
 // non-CAST weapons
 a3e_arr_AmmoDepotSpecialWeapons pushback ["CUP_arifle_RPK74_45", 50, 2, 4, ["CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M"], 6];
-a3e_arr_AmmoDepotBasicWeapons pushback ["CUP_lmg_PKM", 30, 1, 2, ["CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M","CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Red_M","CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Yellow_M"], 4];
-a3e_arr_AmmoDepotBasicWeapons pushback ["CUP_SVD", 25, 1, 4, ["CUP_10Rnd_762x54_SVD_M"], 9];
+a3e_arr_AmmoDepotSpecialWeapons pushback ["CUP_lmg_PKM", 30, 1, 2, ["CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M","CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Red_M","CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Yellow_M"], 4];
+a3e_arr_AmmoDepotSpecialWeapons pushback ["CUP_srifle_SVD_pso", 25, 1, 4, ["CUP_10Rnd_762x54_SVD_M"], 9];
 
 
 
@@ -1666,7 +1666,7 @@ a3e_arr_AquaticPatrols = [
 // use to add boxes from mods to the ammo depots
 //////////////////////////////////////////////////////////////////
 a3e_additional_weapon_box_1 = "CUP_TKBasicWeapons_EP1";
-a3e_additional_weapon_box_2 = "CUP_TKSpecialWeaponsEP1";
+a3e_additional_weapon_box_2 = "CUP_TKSpecialWeapons_EP1";
 
 //////////////////////////////////////////////////////////////////
 // fn_MortarSite
