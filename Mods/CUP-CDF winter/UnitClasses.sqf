@@ -1062,10 +1062,10 @@ a3e_arr_AmmoDepotBasicWeapons pushback ["CUP_lmg_PKM", 50, 1, 2, ["CUP_100Rnd_TE
 a3e_arr_AmmoDepotBasicWeapons pushback ["CUP_arifle_RPK74_45", 50, 1, 2, ["CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M"], 4];
 
 // non-CAST weapons
-a3e_arr_AmmoDepotBasicWeapons pushback ["CUP_arifle_xm8_SAW", 50, 2, 4, ["CUP_100Rnd_556x45_BetaCMag", "CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag", "CUP_100Rnd_TE1_Green_Tracer_556x45_BetaCMag", "CUP_100Rnd_TE1_Yellow_Tracer_556x45_BetaCMag"], 6];
-a3e_arr_AmmoDepotBasicWeapons pushback ["CUP_arifle_XM8_sharpshooter", 50, 2, 4, ["CUP_30Rnd_556x45_G36"], 6];
-a3e_arr_AmmoDepotBasicWeapons pushback ["CUP_lmg_PKM", 50, 1, 2, ["CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Red_M", "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Yellow_M"], 4];
-a3e_arr_AmmoDepotSpecialWeapons pushback ["CUP_ksvk", 10, 1, 2, ["CUP_5Rnd_127x108_KSVK_M"], 9];
+a3e_arr_AmmoDepotSpecialWeapons pushback ["CUP_arifle_xm8_SAW", 50, 2, 4, ["CUP_100Rnd_556x45_BetaCMag", "CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag", "CUP_100Rnd_TE1_Green_Tracer_556x45_BetaCMag", "CUP_100Rnd_TE1_Yellow_Tracer_556x45_BetaCMag"], 6];
+a3e_arr_AmmoDepotSpecialWeapons pushback ["CUP_arifle_XM8_sharpshooter", 50, 2, 4, ["CUP_30Rnd_556x45_G36"], 6];
+a3e_arr_AmmoDepotSpecialWeapons pushback ["CUP_lmg_PKM", 50, 1, 2, ["CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Red_M", "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Yellow_M"], 4];
+a3e_arr_AmmoDepotSpecialWeapons pushback ["CUP_srifle_ksvk_PSO3", 10, 1, 2, ["CUP_5Rnd_127x108_KSVK_M"], 9];
 
 // Weapons and ammo in the launchers box
 a3e_arr_AmmoDepotLaunchers = [];
@@ -1307,14 +1307,14 @@ a3e_arr_CASplane = [
 // Index 4: Array of magazine classnames. Magazines of these types are present if weapon exists.
 // Index 5: Number of magazines per weapon that exists.
 a3e_arr_CrashSiteWrecks = [
-	"Mi8Wreck"];
+	 "Mi8Wreck"
+	,"CUP_Mi8Wreck"];
 a3e_arr_CrashSiteCrew = [
 	"CUP_O_RU_Pilot_EMR"];
 a3e_arr_CrashSiteWrecksCar = [
-	"Land_Wreck_BMP2_F"
-	,"Land_Wreck_BRDM2_F"
-	,"T72Wreck"
-	,"BDRMWreck"];
+	 "BMP2Wreck"
+	,"Land_Wreck_T72_hull_F"
+	,"BRDMWreck"];
 a3e_arr_CrashSiteCrewCar = [
 	"CUP_O_RU_Crew_EMR"];
 // Weapons and ammo in crash site box
@@ -1327,7 +1327,7 @@ a3e_arr_CrashSiteWeapons pushback ["CUP_launch_RPG7V", 10, 1, 2, ["CUP_PG7V_M"],
 a3e_arr_CrashSiteWeapons pushback ["CUP_launch_RPG7V", 10, 1, 2, ["CUP_PG7V_M", "CUP_PG7VM_M", "CUP_PG7VL_M", "CUP_PG7VR_M", "CUP_OG7_M", "CUP_TBG7V_M"], 2];
 a3e_arr_CrashSiteWeapons pushback ["CUP_launch_RPG18", 10, 2, 4, ["CUP_RPG18_M"], 0];
 a3e_arr_CrashSiteWeapons pushback ["CUP_arifle_RPK74_45", 25, 1, 2, ["CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M"], 5];
-a3e_arr_CrashSiteWeapons pushback ["CUP_SVD", 25, 1, 2, ["CUP_10Rnd_762x54_SVD_M"], 8];
+a3e_arr_CrashSiteWeapons pushback ["CUP_srifle_SVD_pso", 25, 1, 2, ["CUP_10Rnd_762x54_SVD_M"], 8];
 a3e_arr_CrashSiteWeapons pushback ["CUP_srifle_VSSVintorez_pso", 10, 1, 2, ["CUP_20Rnd_9x39_SP5_VSS_M"], 8];
 a3e_arr_CrashSiteWeapons pushback ["CUP_smg_bizon", 10, 1, 2, ["CUP_64Rnd_9x19_Bizon_M"], 8];
 a3e_arr_CrashSiteWeapons pushback ["CUP_lmg_Pecheneg", 25, 1, 2, ["CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M"], 6];
