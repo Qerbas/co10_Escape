@@ -16,7 +16,7 @@
 					"PLAYERUNIT_5" : "OPTRE_Ins_URF_Grenadier",
 					"PLAYERUNIT_6" : "OPTRE_Ins_URF_Autorifleman",
 					"PLAYERUNIT_7" : "OPTRE_Ins_URF_Rifleman_AT",
-					"PLAYERUNIT_8" : "OPTRE_Ins_URF_Rifleman",
+					"PLAYERUNIT_8" : "OPTRE_Ins_URF_Rifleman_AR",
 					"PLAYERUNIT_9" : "OPTRE_Ins_URF_Sniper",
 					"PLAYERUNIT_10" : "OPTRE_Ins_URF_Medic"
 				}
@@ -36,7 +36,7 @@
 					"PLAYERUNIT_5" : "OPTRE_Ins_URF_Grenadier",
 					"PLAYERUNIT_6" : "OPTRE_Ins_URF_Autorifleman",
 					"PLAYERUNIT_7" : "OPTRE_Ins_URF_Rifleman_AT",
-					"PLAYERUNIT_8" : "OPTRE_Ins_URF_Rifleman",
+					"PLAYERUNIT_8" : "OPTRE_Ins_URF_Rifleman_AR",
 					"PLAYERUNIT_9" : "OPTRE_Ins_URF_Sniper",
 					"PLAYERUNIT_10" : "OPTRE_Ins_URF_Medic"
 				}
@@ -56,7 +56,7 @@
 					"PLAYERUNIT_5" : "OPTRE_Ins_URF_Grenadier",
 					"PLAYERUNIT_6" : "OPTRE_Ins_URF_Autorifleman",
 					"PLAYERUNIT_7" : "OPTRE_Ins_URF_Rifleman_AT",
-					"PLAYERUNIT_8" : "OPTRE_Ins_URF_Rifleman",
+					"PLAYERUNIT_8" : "OPTRE_Ins_URF_Rifleman_AR",
 					"PLAYERUNIT_9" : "OPTRE_Ins_URF_Sniper",
 					"PLAYERUNIT_10" : "OPTRE_Ins_URF_Medic"
 				}
@@ -76,7 +76,7 @@
 					"PLAYERUNIT_5" : "OPTRE_Ins_URF_Grenadier",
 					"PLAYERUNIT_6" : "OPTRE_Ins_URF_Autorifleman",
 					"PLAYERUNIT_7" : "OPTRE_Ins_URF_Rifleman_AT",
-					"PLAYERUNIT_8" : "OPTRE_Ins_URF_Rifleman",
+					"PLAYERUNIT_8" : "OPTRE_Ins_URF_Rifleman_AR",
 					"PLAYERUNIT_9" : "OPTRE_Ins_URF_Sniper",
 					"PLAYERUNIT_10" : "OPTRE_Ins_URF_Medic"
 				}
@@ -96,7 +96,7 @@
 					"PLAYERUNIT_5" : "OPTRE_Ins_URF_Grenadier",
 					"PLAYERUNIT_6" : "OPTRE_Ins_URF_Autorifleman",
 					"PLAYERUNIT_7" : "OPTRE_Ins_URF_Rifleman_AT",
-					"PLAYERUNIT_8" : "OPTRE_Ins_URF_Rifleman",
+					"PLAYERUNIT_8" : "OPTRE_Ins_URF_Rifleman_AR",
 					"PLAYERUNIT_9" : "OPTRE_Ins_URF_Sniper",
 					"PLAYERUNIT_10" : "OPTRE_Ins_URF_Medic"
 				}
