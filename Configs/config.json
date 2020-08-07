@@ -108,7 +108,7 @@
                     "PLAYERSIDE" : "EAST",
                     "PLAYERUNIT_1" : "O_R_Soldier_TL_F",
                     "PLAYERUNIT_2" : "O_R_Soldier_LAT_F",
-                    "PLAYERUNIT_3" : "O_T_Patrol_Soldier_A_F",
+                    "PLAYERUNIT_3" : "O_R_Patrol_Soldier_A_F",
                     "PLAYERUNIT_4" : "O_R_Patrol_Soldier_Engineer_F",
                     "PLAYERUNIT_5" : "O_R_Soldier_GL_F",
                     "PLAYERUNIT_6" : "O_R_Soldier_AR_F",
@@ -740,6 +740,16 @@
 				"ISLAND" : "Vinjesvingen",
 				"ISLANDNAME" : "Vinjesvingen"
 				}
+		},
+        {
+			"name" : "Mull of Kintyre",
+			"class" : "rof_mok",
+			"path" : "./Islands/rof_mok/",
+			"replace" :
+				{
+				"ISLAND" : "Mull of Kintyre",
+				"ISLANDNAME" : "Mull of Kintyre"
+				}
 		}
 	],
 	"Missions" : [
@@ -1194,6 +1204,13 @@
         {
 			"island" : "Vinjesvingen",
 			"sqm": "vinjesvingen",
+			"mod" : "Vanilla",
+			"replace" : {},
+			"name" : "co10_Escape_BIS_NATO_vs_CSAT"
+		},
+        {
+			"island" : "Mull of Kintyre",
+			"sqm": "rof_mok",
 			"mod" : "Vanilla",
 			"replace" : {},
 			"name" : "co10_Escape_BIS_NATO_vs_CSAT"
@@ -1726,6 +1743,20 @@
         {
 			"island" : "Vinjesvingen",
 			"sqm": "vinjesvingen",
+			"mod" : "Vanilla Contact US",
+			"replace" : {},
+			"name" : "co10_Escape_Contact_CSAT_vs_NATO"
+		},
+        {
+			"island" : "Mull of Kintyre",
+			"sqm": "rof_mok",
+			"mod" : "Vanilla US",
+			"replace" : {},
+			"name" : "co10_Escape_BIS_CSAT_vs_NATO"
+		},
+        {
+			"island" : "Mull of Kintyre",
+			"sqm": "rof_mok",
 			"mod" : "Vanilla Contact US",
 			"replace" : {},
 			"name" : "co10_Escape_Contact_CSAT_vs_NATO"
