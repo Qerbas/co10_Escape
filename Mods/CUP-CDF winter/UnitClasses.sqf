@@ -1058,8 +1058,8 @@ a3e_arr_AmmoDepotBasicWeapons pushback ["CUP_arifle_FNFAL", 50, 1, 2, ["CUP_20Rn
 a3e_arr_AmmoDepotSpecialWeapons = [];
 // CSAT weapons
 a3e_arr_AmmoDepotSpecialWeapons pushback ["CUP_srifle_SVD", 50, 2, 4, ["CUP_10Rnd_762x54_SVD_M"], 9];
-a3e_arr_AmmoDepotBasicWeapons pushback ["CUP_lmg_PKM", 50, 1, 2, ["CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Red_M", "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Yellow_M"], 4];
-a3e_arr_AmmoDepotBasicWeapons pushback ["CUP_arifle_RPK74_45", 50, 1, 2, ["CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M"], 4];
+a3e_arr_AmmoDepotSpecialWeapons pushback ["CUP_lmg_PKM", 50, 1, 2, ["CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Red_M", "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Yellow_M"], 4];
+a3e_arr_AmmoDepotSpecialWeapons pushback ["CUP_arifle_RPK74_45", 50, 1, 2, ["CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M"], 4];
 
 // non-CAST weapons
 a3e_arr_AmmoDepotSpecialWeapons pushback ["CUP_arifle_xm8_SAW", 50, 2, 4, ["CUP_100Rnd_556x45_BetaCMag", "CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag", "CUP_100Rnd_TE1_Green_Tracer_556x45_BetaCMag", "CUP_100Rnd_TE1_Yellow_Tracer_556x45_BetaCMag"], 6];
