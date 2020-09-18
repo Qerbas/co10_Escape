@@ -148,10 +148,11 @@ _obj setdir ((getdir _obj) + _rotation);
 _obj setPosATL _pos;
 
 _pos = [_center,_center vectorAdd [3.01978,-8.02002,0],_rotation] call A3E_fnc_rotatePosition;
-_obj = "Flag_CSAT_F" createvehicle _pos;
+_obj = createVehicle ["FlagPole_F", _pos, [], 0, "NONE"];
 _obj setVectorDirAndUp [[0.0760487,-0.997104,0],[0,-0,1]];
 _obj setdir ((getdir _obj) + _rotation);
 _obj setPosATL _pos;
+_obj setflagtexture A3E_VAR_Flag_Opfor;
 //_obj forceFlagTexture "mapConfig\logo.paa"; 
 
 _pos = [_center,_center vectorAdd [4.15967,-5.37695,0],_rotation] call A3E_fnc_rotatePosition;

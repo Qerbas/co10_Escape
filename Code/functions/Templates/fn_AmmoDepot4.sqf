@@ -84,7 +84,8 @@ private _fnc_createObject = {
 	
 //Add your own server flag - uncomment line 104  (see https://forums.bohemia.net/forums/topic/180080-co10-escape/?do=findComment&comment=3346952 )
 //+ Create a folder "flag" in the root directory of your misson file. Drop in your paa logo & call it logo.paa (jpg might work, PAA is the best).
-_obj = ["Flag_CSAT_F",_center,[-15.5826,-14.6431,0],_rotation,266.77] call _fnc_createObject;
+_obj = ["FlagPole_F",_center,[-15.5826,-14.6431,0],_rotation,266.77] call _fnc_createObject;
+_obj setflagtexture A3E_VAR_Flag_Opfor;
 //_obj forceFlagTexture "mapConfig\logo.paa"; 
 
 
