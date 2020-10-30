@@ -11,7 +11,7 @@ _enemyFrequency = _this select 0;
 
 A3E_VAR_Side_Blufor = west; //CUP GER KSK
 A3E_VAR_Side_Opfor = east; //CUP Takistani Army
-A3E_VAR_Side_Ind = resistance; //CUP 
+A3E_VAR_Side_Ind = resistance; //CUP Takistani Locals
 
 A3E_VAR_Flag_Opfor = "\CUP\BaseConfigs\CUP_BaseConfigs\Data\Flags\flag_tka_co";
 A3E_VAR_Flag_Ind = "\CUP\BaseConfigs\CUP_BaseConfigs\Data\Flags\flag_tkg_co";
@@ -1543,6 +1543,7 @@ a3e_arr_AmmoDepotBasicWeapons pushback ["CUP_arifle_AKM", 100, 3, 5, ["CUP_30Rnd
 a3e_arr_AmmoDepotBasicWeapons pushback ["CUP_srifle_LeeEnfield", 100, 3, 5, ["CUP_10x_303_M"], 15];
 a3e_arr_AmmoDepotBasicWeapons pushback ["CUP_arifle_AK74", 100, 3, 5, ["CUP_30Rnd_545x39_AK_M", "CUP_30Rnd_TE1_Green_Tracer_545x39_AK_M", "CUP_30Rnd_TE1_Red_Tracer_545x39_AK_M", "CUP_30Rnd_TE1_White_Tracer_545x39_AK_M", "CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK_M"], 6];
 a3e_arr_AmmoDepotBasicWeapons pushback ["CUP_arifle_AKM_GL", 75, 2, 4, ["CUP_30Rnd_762x39_AK47_M", "CUP_30Rnd_762x39_AK47_TK_M", "CUP_30Rnd_TE1_Green_Tracer_762x39_AK47_M", "CUP_30Rnd_TE1_Red_Tracer_762x39_AK47_M", "CUP_30Rnd_TE1_Yellow_Tracer_762x39_AK47_M", "CUP_1Rnd_HE_GP25_M"], 6];
+a3e_arr_AmmoDepotBasicWeapons pushback ["CUP_arifle_M16A2", 50, 2, 4, ["CUP_30Rnd_556x45_Stanag","CUP_30Rnd_556x45_Stanag_Tracer_Yellow","CUP_30Rnd_556x45_Stanag_Tracer_Green","CUP_30Rnd_556x45_Stanag_Tracer_Red"], 6];
 a3e_arr_AmmoDepotBasicWeapons pushback ["CUP_arifle_M16A2_GL", 75, 2, 4, ["CUP_30Rnd_556x45_Stanag","CUP_30Rnd_556x45_Stanag_Tracer_Yellow","CUP_30Rnd_556x45_Stanag_Tracer_Green","CUP_30Rnd_556x45_Stanag_Tracer_Red","CUP_1Rnd_HEDP_M203","CUP_1Rnd_HE_M203"], 6];
 a3e_arr_AmmoDepotBasicWeapons pushback ["CUP_arifle_AKS", 75, 2, 4, ["CUP_30Rnd_762x39_AK47_M", "CUP_30Rnd_TE1_Green_Tracer_762x39_AK47_M", "CUP_30Rnd_TE1_Red_Tracer_762x39_AK47_M", "CUP_30Rnd_TE1_Yellow_Tracer_762x39_AK47_M"], 6];
 
@@ -1577,11 +1578,6 @@ a3e_arr_AmmoDepotLaunchers pushback ["CUP_launch_RPG7V", 50, 1, 3, ["CUP_PG7VL_M
 a3e_arr_AmmoDepotLaunchers pushback ["CUP_launch_M47", 50, 1, 2, ["CUP_Dragon_EP1_M"], 3];
 a3e_arr_AmmoDepotLaunchers pushback ["CUP_launch_FIM92Stinger", 50, 1, 2, ["CUP_Stinger_M"], 0];
 
-
-//a3e_arr_AmmoDepotLaunchers pushback ["launch_I_Titan_F", 100, 1, 1, ["Titan_AA"], 3];
-//a3e_arr_AmmoDepotLaunchers pushback ["launch_I_Titan_short_F", 100, 1, 1, ["Titan_AP", "Titan_AT"], 3];
-//a3e_arr_AmmoDepotLaunchers pushback ["launch_B_Titan_F", 100, 1, 1, ["Titan_AA"], 3];
-//a3e_arr_AmmoDepotLaunchers pushback ["launch_B_Titan_short_F", 100, 1, 1, ["Titan_AP", "Titan_AT"], 3];
 
 
 // Weapons and ammo in the ordnance box
