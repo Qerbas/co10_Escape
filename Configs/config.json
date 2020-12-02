@@ -882,6 +882,13 @@
 		{
 			"island" : "Lingor",
 			"sqm": "Lingor3",
+			"mod" : "Vanilla US",
+			"replace" : {},
+			"name" : "co10_Escape_BIS_CSAT_vs_NATO"
+		},
+		{
+			"island" : "Lingor",
+			"sqm": "Lingor3",
 			"mod" : "Vanilla Apex",
 			"replace" : {},
 			"name" : "co10_Escape_APEX_NATO_vs_CSAT"
@@ -1389,20 +1396,6 @@
 			"mod" : "Vanilla US",
 			"replace" : {},
 			"name" : "co10_Escape_BIS_CSAT_vs_NATO"
-		},
-		{
-			"island" : "Lingor",
-			"sqm": "Lingor3",
-			"mod" : "Vanilla US",
-			"replace" : {},
-			"name" : "co10_Escape_BIS_CSAT_vs_NATO"
-		},
-        {
-			"island" : "Lingor",
-			"sqm": "Lingor3",
-			"mod" : "Vanilla Apex US",
-			"replace" : {},
-			"name" : "co10_Escape_APEX_CSAT_vs_NATO"
 		},
 		{
 			"island" : "Dingor",
