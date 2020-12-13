@@ -566,8 +566,10 @@ a3e_arr_CivilianCarWeapons pushback ["CUP_sgun_AA12", "CUP_20Rnd_B_AA12_74Slug",
 a3e_arr_CivilianCarWeapons pushback ["CUP_sgun_AA12", "CUP_20Rnd_B_AA12_HE", 9];
 a3e_arr_CivilianCarWeapons pushback ["CUP_arifle_AKS74UN_kobra_snds", "CUP_30Rnd_545x39_AK_M", 9];
 a3e_arr_CivilianCarWeapons pushback ["CUP_glaunch_6G30", "CUP_1Rnd_HE_GP25_M", 8];
-a3e_arr_CivilianCarWeapons pushback ["CUP_arifle_Mk16_CQC_FG", "CUP_30Rnd_556x45_Stanag", 8];
-a3e_arr_CivilianCarWeapons pushback ["CUP_arifle_CZ805_A1_ZDDot_Laser", "CUP_30Rnd_556x45_Stanag", 7];
+a3e_arr_CivilianCarWeapons pushback ["CUP_smg_M3A1", "CUP_30Rnd_45ACP_M3A1_M", 8];
+a3e_arr_CivilianCarWeapons pushback ["CUP_arifle_Mk16_CQC_FG_woodland", "CUP_30Rnd_556x45_Stanag_Mk16_woodland", 8];
+a3e_arr_CivilianCarWeapons pushback ["CUP_arifle_CZ805_A1_ZDDot_Laser", "CUP_30Rnd_556x45_CZ805", 7];
+a3e_arr_CivilianCarWeapons pushback ["CUP_CZ_BREN2_556_14_Grn", "CUP_30Rnd_556x45_Stanag", 7];
 a3e_arr_CivilianCarWeapons pushback ["CUP_lmg_M240", "CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M", 5];
 a3e_arr_CivilianCarWeapons pushback ["CUP_srifle_LeeEnfield", "CUP_10x_303_M", 8];
 a3e_arr_CivilianCarWeapons pushback ["CUP_srifle_CZ550", "CUP_5x_22_LR_17_HMR_M", 10];
@@ -636,6 +638,17 @@ a3e_arr_Bipods = [
 	,"bipod_03_F_blk"
 	,"bipod_03_F_oli"];
 
+//////////////////////////////////////////////////////////////////
+// SelectExtractionZone.sqf
+// Which type of extractions are supported/preferred by this unitclasses version?
+// Only if supported by terrain, so if corresponding markers are placed
+// Basic fallback is always Heli extraction
+// Available types: a3e_arr_extractiontypes = ["air","land","sea"];
+//////////////////////////////////////////////////////////////////
+a3e_arr_extractiontypes = [
+	"air"
+	,"land"
+	,"sea"];
 
 //////////////////////////////////////////////////////////////////
 // RunExtraction.sqf
@@ -646,12 +659,39 @@ a3e_arr_extraction_chopper = [
 	,"CUP_B_MH60L_DAP_4x_USN"
 	,"CUP_B_MH60S_FFV_USMC"
 	,"CUP_B_UH60S_USN"
-	,"CUP_B_UH1Y_UNA_USMC"
-	,"CUP_B_UH1Y_MEV_USMC"
+	,"CUP_B_UH1Y_Gunship_Dynamic_USMC"
 	,"CUP_B_MV22_USMC_RAMPGUN"
 	,"CUP_B_MV22_USMC_RAMPGUN"];
 a3e_arr_extraction_chopper_escort = [
 	"CUP_B_AH1Z_USMC"];
+
+//////////////////////////////////////////////////////////////////
+// RunExtractionBoat.sqf
+// Boats that come to pick you up
+//////////////////////////////////////////////////////////////////
+a3e_arr_extraction_boat = [
+	"CUP_B_RHIB_USMC"
+	,"CUP_B_RHIB2Turret_USMC"
+	,"CUP_B_LCU1600_USMC"];
+a3e_arr_extraction_boat_escort = [
+	"CUP_B_RHIB_USMC"
+	,"CUP_B_RHIB2Turret_USMC"];
+
+//////////////////////////////////////////////////////////////////
+// RunExtractionLand.sqf
+// Boats that come to pick you up
+//////////////////////////////////////////////////////////////////
+a3e_arr_extraction_car = [
+	"CUP_B_MTVR_USMC"	//12
+	,"CUP_B_RG31E_M2_OD_USMC"	//8
+	,"CUP_B_AAV_Unarmed_USMC"	//14
+	,"CUP_B_AAV_USMC"];	//14
+a3e_arr_extraction_car_escort = [
+	"CUP_B_LAV25_USMC"
+	,"CUP_B_LAV25_green"
+	,"CUP_B_M60A3_USMC"
+	,"CUP_B_M1A1_Woodland_USMC"
+	,"CUP_B_M1A2_TUSK_MG_USMC"];
 
 //////////////////////////////////////////////////////////////////
 // EscapeSurprises.sqf and CreateSearchDrone.sqf
