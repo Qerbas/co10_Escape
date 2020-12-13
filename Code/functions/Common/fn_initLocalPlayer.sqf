@@ -33,8 +33,6 @@ player unassignItem "ItemCompass";
 player removeItem "ItemCompass";
 player unassignItem "itemGPS";
 player removeItem "itemGPS";
-player unassignItem "itemRadio";
-player removeItem "itemRadio";
 player unassignItem "itemWatch";
 player removeItem "itemWatch";
 player unassignItem "O_UavTerminal";
