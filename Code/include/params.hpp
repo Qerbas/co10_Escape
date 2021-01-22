@@ -97,19 +97,27 @@ class Params
             texts[] = {""};
             default = 0;
 	};
+	class Param_UseIntel
+	{
+		title="Collect intel to reveal markers on map";
+		values[]={0,1};
+		texts[]={"Disabled","Enabled"};
+		default = 1;
+		tooltip = "This will enable the collection of intel from enemies. Intel will reveal locations on the map.";
+	};
+	class Param_IntelChance
+	{
+		title="Chance an enemy carries intel";
+		values[]={5,10,20,30,40,50};
+		texts[]={"5%","10%","20%","30%","40%","50%"};
+		default = 10;
+	};
 	class Param_RevealMarkers
 	{
 		title="Display of markers on map";
 		values[]={0,1,2,3};
 		texts[]={"Always show (with type)","Always show marker but hide type (questionmark)","Show marker upon discovery","Never show markers"};
-		default = 1;
-	};
-    class Param_MotorPools
-	{
-        title="Enable Motor Pools";
-        values[]={0,1};
-        texts[]={"Disabled - No motor pools","Random - Spawns motor pools, works for all maps"};
-        default = 1;
+		default = 2;
 	};
 	class Param_VehicleLock
 	{

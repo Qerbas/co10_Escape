@@ -5,9 +5,11 @@ class CfgFunctions
     class Common
     {
 		class BootstrapEscape {
+#ifndef A3E_EDITOR
 			preInit = 0; // 1 to call the function upon mission start, before objects are initialized. Passed arguments are ["preInit"]
 			postInit = 1; // 1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
 			recompile = 0;
+#endif
 		};
 		class RandomMarkerPos {};
 		class GetSideColor {};
@@ -31,7 +33,9 @@ class CfgFunctions
 		//	postInit = 1;
 		};
 		class InitLocalPlayer {
+#ifndef A3E_EDITOR
 			postInit = 0;
+#endif
 		};			
 		class cleanupTerrain {};
 		class handleRating {};
@@ -40,7 +44,7 @@ class CfgFunctions
 		class FireSmokeFX {};
 		class OnVehicleSpawn {};
 		class initArsenal {};
-
+		class toggleEarplugs {};
 		};
 		class AI
 		{
@@ -72,6 +76,12 @@ class CfgFunctions
             class debugMsg {};
 			class rptLog {};
 		};
+		class Intel
+		{
+			class AddIntel {};
+			class CollectIntel {};
+			class RevealPOI {};
+		};
 		class Server
 		{
 			class initServer {
@@ -83,10 +93,11 @@ class CfgFunctions
 			class watchKnownPosition {};
 			class parameterInit {}; 
             class createComCenters {};
-            class createMotorPool {};
+            class createMotorPools {};
             class createAmmoDepots {};
 			class createMortarSites {};
 			class createLocationMarker {};
+			class UpdateLocationMarker {};
 			class createExtractionPoint {};
 			class runExtraction {};
 			class runExtractionBoat {};
@@ -135,7 +146,9 @@ class CfgFunctions
 			class Roadblock {};
 			class Roadblock2 {};
 			class Roadblock3 {};
-			class Roadblock4 {};			
+			class Roadblock4 {};	
+			class isoTemplateStore {};		
+			class isoTemplateRestore {};	
 		};
 		class Chronos
 		{
@@ -183,16 +196,20 @@ class CfgFunctions
 	{
 		class Revive
 		{
+#ifndef A3E_EDITOR
 			file = "Revive\functions\revive";
 			#include "..\Revive\functions\revive\revive.hpp"
+#endif
 		};
 	};
 	class ATHSC
 	{
 		class HSC
 		{
+#ifndef A3E_EDITOR
 			file = "Revive\functions\HSC";
 			#include "..\Revive\functions\HSC\hsc.hpp"
+#endif
 		};
 	};
 	class ace
