@@ -120,6 +120,7 @@ class CfgFunctions
 			class deactivatePatrolZone {};
 			class onEnemySoldierSpawn {};
 			class spawnPatrol {};
+			class getDynamicSquadsize {};
 		};
 		class Templates
 		{
@@ -163,6 +164,17 @@ class CfgFunctions
 			class WriteStatisticsToBriefing {};
 			class SaveStatistics {};
 			class ParseStatistics {};
+		};
+		class Searchleader
+		{
+			class PlayerDetection {};
+			class recordSighting {};
+			class ReportToHQ {};
+			class SearchLeader {};
+			class SearchLeaderInit {};
+			class SearchLeaderRadio {};
+			class CreateKnownPosition {};
+			
 		};
 	};
 	class drn

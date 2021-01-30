@@ -16,36 +16,38 @@ private _settingCategory = _category;
         private _texts = getArray (_x >> "texts");
         private _default = getNumber (_x >> "default");
 		private _tooltip = [(_x),"tooltip",""] call BIS_fnc_returnConfigEntry;
+		private _livechanges = [(_x),"livechanges",0] call BIS_fnc_returnConfigEntry;
+		private _code = [(_x),"code",""] call BIS_fnc_returnConfigEntry;
 		if(_tooltip == "") then {
 			_tooltip = _title;
 		};
         private _type = "LIST";
         private _valueInfo = [_values, _texts, _values find _default];
-        if (_name == "Param_Loadparams") then {
+        if (_name == "A3E_Param_Loadparams") then {
             _name = "UseCBASettings";
             _title = "Use CBA settings";
             _type = "CHECKBOX";
             _valueInfo = false;
         } else {
-            if (
-                _values isEqualTo [0,1]
-                && {toLower (_texts#0) in ["disabled", "off", "no"]}
-                && {toLower (_texts#1) in ["enabled", "on", "yes"]}
-            ) then {
-                _type = "CHECKBOX";
-                _valueInfo = [false, true] select _default;
-            };
+            //if (
+            //    _values isEqualTo [0,1]
+            //    && {toLower (_texts#0) in ["disabled", "off", "no"]}
+            //    && {toLower (_texts#1) in ["enabled", "on", "yes"]}
+            //) then {
+            //    _type = "CHECKBOX";
+             //   _valueInfo = [false, true] select _default;
+           // };
         };
 		//private _varname = [(_x),"varname","a3e_" + _name] call BIS_fnc_returnConfigEntry;
         [
-            "a3e_" + _name,
+            _name,
             _type,
             [_title, _tooltip],
             _settingCategory,
             _valueInfo,
-            true,
-            {},
-            true
+            1,
+            compile _code,
+            ([true, false] select _livechanges)
         ] call CBA_fnc_addSetting;
     };
 } forEach ('true' configClasses (missionConfigFile >> "Params"));
